@@ -1,9 +1,90 @@
+*{padding: 0px; margin: 0px;}
+ul{list-style: none;}
+
 header{
-    background: #1abc9c;
     display: flex;
-    height: 10em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#img_back{
+    opacity: 0.8;
+    width: auto;
+    height: auto;
+}
+
+#title{
+    position: absolute;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 17, 39);
+}
+
+.nav_item{
+    color: rgb(209, 208, 208);
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+.nav_item:hover{
     color: white;
+}
+
+article{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article div{
+    margin: 20px;
+    padding: 10px;
+}
+
+article div h1{
+    font-weight: bold;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #dddddd;
+}
+
+#intro{
+    background-color: rgb(217, 177, 255);
+}
+
+#skill{
+    background-color: rgb(135, 181, 241);
+}
+
+#portfolio{
+    background-color: rgb(116, 240, 158);
+}
+
+#contact{
+    background-color: rgb(245, 230, 164);
+}
+
+/* 반응형 웹 - 미디어 쿼리 */
+@media screen and (max-width:700px) {
+    article, nav{
+        flex-direction: column;
+    }
+    article{
+        width: 100%;
+    }
+    #title{
+        font-size: 24px;
+    }
 }

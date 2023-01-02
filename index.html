@@ -2,27 +2,64 @@
 <html>
     <head>
       
-      <!-- index.css -->
-      <link rel="stylesheet" href="./css/index.css">
+        <!-- index.css -->
+        <link rel="stylesheet" href="./css/index.css">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
       
-      <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
+        <!-- Bootstrap CSS library 적용 [getbootstrap.com] -->
+        
+        <!-- CDN 방식으로 적용 -->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     
-      <!-- Bootstrap CSS library 적용 [getbootstrap.com] -->
-      
-      <!-- CDN 방식으로 적용 -->
-      <!-- CSS only -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
-      <!-- JavaScript Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  
 
-      <meta charset="utf-8">
-      <title>목표를 실현하는 개발자</title>
+        <meta charset="utf-8">
+        <title>목표를 실현하는 개발자</title>
     </head>
     <body>
         <header>
-          <h1>윤미정 사이트</h1>
-          <p>안녕 반가워 나는 윤미정이야</p>
+            <img src="./images/background.jpg" alt="" id="img_back">
+          
+            <h1 id="title">윤미정 사이트</h1>
         </header>
+        <nav id="nav">
+            <a href="#" class="nav_item">Home</a>
+            <a href="#" class="nav_item">Intro</a>
+            <a href="#" class="nav_item">Skill</a>
+            <a href="#" class="nav_item">Portfolio</a>
+            <a href="#" class="nav_item">Contact</a>
+        </nav>
+
+        <div>
+            <article>
+                <div id="intro">
+                    <h1>About Me</h1>
+                    <p>나의 소개글 작성하기</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quis, eos temporibus beatae nesciunt inventore nisi consequatur, excepturi, vel illum vitae magnam veritatis nam. Quam reiciendis vitae officiis quia sit?</p>
+                </div>
+                <div id="skill">
+                    <h1>Skill</h1>
+                    <p>내가 보유한 기술 작성</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quis, eos temporibus beatae nesciunt inventore nisi consequatur, excepturi, vel illum vitae magnam veritatis nam. Quam reiciendis vitae officiis quia sit?</p>
+                </div>
+                <div id="portfolio">
+                    <h1>Portfolio</h1>
+                    <p>내가만든 어플,웹사이트 등 포트폴리오 보여주기</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quis, eos temporibus beatae nesciunt inventore nisi consequatur, excepturi, vel illum vitae magnam veritatis nam. Quam reiciendis vitae officiis quia sit?</p>
+                </div>
+                <div id="contact">
+                    <h1>Contact</h1>
+                    <p>나의 연락처, 이메일, 깃헙주소</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quis, eos temporibus beatae nesciunt inventore nisi consequatur, excepturi, vel illum vitae magnam veritatis nam. Quam reiciendis vitae officiis quia sit?</p>
+                </div>
+            </article>
+        </div>
+
+        <footer>
+            <h1>footer</h1>
+        </footer>
     </body>
 </html>
