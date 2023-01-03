@@ -83,6 +83,10 @@ footer{
     article{
         width: 100%;
     }
+    .nav_item:hover{
+        color: black;
+        background-color: white;
+    }
     #title{
         font-size: 24px;
     }
