@@ -8,6 +8,7 @@ header{
     align-items: center;
 }
 
+
 #img_back{
     opacity: 0.8;
     width: 100%;
@@ -19,18 +20,37 @@ header{
     font-size: 48px;
 }
 
-nav{
+aside{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(0, 17, 39);
+    top:0;
+    left:0;
+}
+
+nav { 
+    width:100%;
+    height:50px; 
+    background: rgb(1, 28, 65);
+    color:white; 
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(0, 17, 39);
+    align-items: center;
+    top:0;
+    left:0;
 }
 
 .nav_item{
     color: rgb(209, 208, 208);
     padding: 30px;
-    text-decoration: none;
     text-align: center;
+    text-decoration: none;
+    
 }
 .nav_item:hover{
     color: white;
@@ -54,8 +74,12 @@ article div h1{
 }
 
 footer{
+    height: 300px;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #dddddd;
 }
 
@@ -77,12 +101,15 @@ footer{
 
 /* 반응형 웹 - 미디어 쿼리 */
 @media screen and (max-width:1000px) {
-    article, nav{
+    article, aside, nav{
         flex-direction: column;
-    }
-    article{
         width: 100%;
     }
+
+    aside{
+        position: inherit;
+    }
+
     .nav_item:hover{
         color: black;
         background-color: white;
