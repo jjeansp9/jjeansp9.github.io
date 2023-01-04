@@ -10,7 +10,7 @@ header{
 
 
 #img_back{
-    opacity: 0.8;
+    opacity: 0.4;
     width: 100%;
 }
 
@@ -45,14 +45,16 @@ nav {
     left:0;
 }
 
-.nav_item{
-    color: rgb(209, 208, 208);
-    padding: 30px;
-    text-align: center;
+.nav_item, .nav_item a{
+    color: rgb(185, 185, 185);
     text-decoration: none;
-    
+    padding: 20px;
+
 }
-.nav_item:hover{
+
+
+
+.nav_item:hover, .nav_item a:hover{
     color: white;
 }
 
