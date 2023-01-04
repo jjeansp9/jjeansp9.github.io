@@ -1,6 +1,10 @@
 *{padding: 0px; margin: 0px;}
 ul{list-style: none;}
 
+body{
+    background-color: blue;
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -10,8 +14,9 @@ header{
 
 /* 인트로 배경화면이미지 */
 #img_back{
+    margin-top: 1200px;
+    position: fixed;
     opacity: 0.4;
-    width: 100%;
 }
 
 /* 타이틀 글씨 */
@@ -51,25 +56,30 @@ aside{
 }
 
 /* 메인영역 */
+
 article{
-    width: 800px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin-top: 800px;
+    background-color: rgb(24, 24, 24);
 }
 
 article div{
-    margin: 20px;
-    padding: 10px;
+    width: 60%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 420px;
 }
 
-article div h1{
+article div h2{
     font-weight: bold;
 }
 
 footer{
-    height: 300px;
+    position: relative;
+    height: 200px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -79,19 +89,15 @@ footer{
 }
 
 #intro{
-    background-color: rgb(217, 177, 255);
 }
 
 #skill{
-    background-color: rgb(135, 181, 241);
 }
 
 #portfolio{
-    background-color: rgb(116, 240, 158);
 }
 
 #contact{
-    background-color: rgb(245, 230, 164);
 }
 
 
@@ -124,12 +130,17 @@ footer{
 
 /* 반응형 웹 - 미디어 쿼리 */
 @media screen and (max-width:800px) {
-    article, aside, nav{
+    article div , aside, nav{
         flex-direction: column;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     aside{
-        position: initial;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        visibility: hidden;
     }
     .nav_item a{
         margin-right: 18px;
@@ -144,7 +155,13 @@ footer{
     }
 }
 
-@media screen and (min-width:801px) and (max-width:1400px) {
+@media screen and (min-width:801px) and (max-width:1200px) {
+    article div{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     aside{
         flex-direction: column;
         width: 100%;
