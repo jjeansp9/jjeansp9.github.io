@@ -25,6 +25,7 @@ header{
 aside{
     position:fixed;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     width: 300px;
@@ -34,11 +35,13 @@ aside{
     left:0;
 }
 
-.nav_item, .nav_item a{
+.nav_item a{
     display: block;
     color: rgb(185, 185, 185);
     text-decoration: none;
-    padding: 10px;
+    padding: 16px;
+    margin-left: 18px;
+    font-weight: bold;
 }
 
 .nav_item a:hover{
@@ -125,16 +128,16 @@ footer{
         flex-direction: column;
         width: 100%;
     }
-
     aside{
-        position: inherit;
+        position: initial;
     }
-
-    .nav_item:hover{
+    .nav_item a{
+        margin-right: 18px;
+        text-align: center;
+    }
+    .nav_item a:hover{
         color: black;
         background-color: white;
-        transform: scale(1.1, 1.1);
-        transition: background-color 0.2s, transform 0.2s;
     }
     #title{
         font-size: 24px;
@@ -148,10 +151,12 @@ footer{
         position: absolute;
         visibility: hidden;
     }
-    .nav_item:hover{
+    .nav_item a{
+        margin-right: 18px;
+        text-align: center;
+    }
+    .nav_item a:hover{
         color: black;
         background-color: white;
-        transform: scale(1.1, 1.1);
-        transition: background-color 0.2s, transform 0.2s;
     }
 }
