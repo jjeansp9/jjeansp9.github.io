@@ -3,11 +3,26 @@
     <head>
         <link rel="stylesheet" href="../css/home.css">
         <meta charset="utf-8">
+
+        <style>
+            div h2.fi {
+              display: none;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+          
+        <script>
+            $( document ).ready( function() {
+              $( 'div h2.fi' ).fadeIn( 2000 );
+            } );
+        </script>
     </head>
     <body>
         <article>
             <div id="intro">
-                <h2>About Me</h2>
+                <button onClick="window.location.reload()">새로 고침</button>
+                <h2 class="fi">About Me</h2>
                 <p>나의 소개글 작성하기</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quis, eos temporibus beatae nesciunt inventore nisi consequatur, excepturi, vel illum vitae magnam veritatis nam. Quam reiciendis vitae officiis quia sit?</p>
             </div>
