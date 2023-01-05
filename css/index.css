@@ -26,18 +26,15 @@ header{
     font-size: 48px;
 }
 
-/* 왼쪽 사이드 */
-aside{
-    position:fixed;
+/* nav */
+nav{
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    width: 300px;
-    height: 100%;
+    align-items: center;
+    margin-top: 800px;
     background-color: rgb(0, 17, 39);
-    top:0;
-    left:0;
 }
 
 .nav_item a{
@@ -53,30 +50,22 @@ aside{
     color: white;
     transform: scale(1.2, 1.2);
     transition: background-color 0.2s, transform 0.2s;
+    
 }
 
 /* 메인영역 */
-
-article{
+iframe{
     position: relative;
+    display:block;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 800px;
-    background-color: rgb(248, 248, 248);
+    justify-content: center;
+    width:100vw; 
+    height: 120vh;
+    background-color: rgb(241, 241, 241);
 }
 
-article div{
-    width: 60%;
-    padding: 20px;
-    margin-top: 30px;
-    margin-left: 420px;
-}
-
-article div h2{
-    font-weight: bold;
-}
-
+/* footer */
 footer{
     position: relative;
     height: 200px;
@@ -101,42 +90,16 @@ footer{
 }
 
 
-/* 사이드바 */
-#sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100%;
-    z-index: 999;
-    background: #333;
-    color: rgb(71, 66, 66);
-    transition: all 0.3s;
-}
-#sidebar.active {
-    left: 0;
-}
-
-.overlay {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(99, 98, 98, 0.7);
-    z-index: 998;
-    display: none;
-}
-
-
 
 /* 반응형 웹 - 미디어 쿼리 */
 @media screen and (max-width:800px) {
-    article div , aside, nav{
+    nav{
         flex-direction: column;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    aside{
+    nav{
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -156,13 +119,7 @@ footer{
 }
 
 @media screen and (min-width:801px) and (max-width:1200px) {
-    article div{
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    aside{
+    nav{
         flex-direction: column;
         width: 100%;
         position: absolute;

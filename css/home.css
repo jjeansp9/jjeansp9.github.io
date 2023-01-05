@@ -1,0 +1,30 @@
+article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+article div h2{
+    font-weight: bold;
+}
+
+/* 반응형 웹 - 미디어 쿼리 */
+@media screen and (max-width:800px) {
+    article div{
+        width: 100%;
+        margin-right: 90px;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1200px) {
+    article div{
+        width: 800px;
+        margin-right: 90px;
+    }
+}
