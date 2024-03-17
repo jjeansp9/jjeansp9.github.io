@@ -36,15 +36,19 @@ article div h2{
 
 body {
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     padding: 20px;
+    margin-top: 20px;
 }
 
 article {
     margin: 20px auto;
-    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
     max-width: 1200px;
-    background: #fff;
+    background: #fcfcfc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -57,8 +61,16 @@ p {
     margin-bottom: 20px;
 }
 
+#two {
+    margin-top: 40px;
+}
+
+#three{
+    margin-top: 40px;
+}
+
 #intro, #skill, #portfolio, #contact {
-    margin-bottom: 40px;
+    margin: 40px;
 }
 
 /* 반응형 웹 - 미디어 쿼리 */

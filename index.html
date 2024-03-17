@@ -1,85 +1,350 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      
-        <!-- index.css -->
-        <link rel="stylesheet" href="./css/index.css">
-        
-        <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
-      
-        <!-- Bootstrap CSS library 적용 [getbootstrap.com] -->
-        
-        <!-- CDN 방식으로 적용 -->
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Jinsol Park's Portfolio</title>
-    </head>
 
-    <header>
-        <img src="./images/background.jpg" id="img_back">
-      
-        <h1 id="title">흠</h1>
-    </header>
+<head>
 
-    <body>
-        <nav id="nav">
-            <div class="nav_item">
-                
-                <a href="./menu/home.html" target="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 2px;">
-                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
-                    </svg>
-                    
-                Home</a>
-            </div>
-            <div class="nav_item">
-                
-                <a href="./menu/intro.html" target="menu"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 1px;">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+    <!-- index.css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
+
+    <!-- Bootstrap CSS library 적용 [getbootstrap.com] -->
+
+    <!-- CDN 방식으로 적용 -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jinsol Park's Portfolio</title>
+</head>
+
+<header>
+    <img src="./images/background.jpg" id="img_back">
+
+    <h1 id="title">if you can dream it, you can do it</h1>
+</header>
+
+<body>
+    <nav id="nav">
+        <div class="nav_item">
+
+            <a href="./menu/home.html" target="menu"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                    fill="currentColor" class="bi bi-person" viewBox="0 0 16 16"
+                    style="margin-bottom: 5px; margin-right: 1px;">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
                 </svg>
-                Intro</a>
-            </div>
-            <div class="nav_item">
-                                <a href="./menu/skill.html" target="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-hdd-stack" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 3px;">
-                        <path d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2z"/>
-                        <path d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
-                        <path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-                    </svg>
+                About Me</a>
+        </div>
+        <div class="nav_item">
+            <a href="./menu/skill.html" target="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-hdd-stack" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 3px;">
+                    <path
+                        d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2z" />
+                    <path
+                        d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
+                    <path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                </svg>
                 Skill</a>
-            </div>
-            <div class="nav_item">
-                
-                <a href="./menu/portfolio.html" target="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 3px;">
-                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
-                    </svg>
-                Portfolio</a>
-            </div>
-            <div class="nav_item">
-                
-                <a href="./menu/contact.html" target="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 3px;">
-                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
-                    </svg>
-                Contact</a>
-            </div> 
-        </nav>
-        
-        <iframe id="myIframe" src="./menu/home.html" frameborder="0" scrolling="no" name="menu"></iframe>
-        
-        <footer>
-            <p>Copyright &copy; 2023 JspStudio</p>
-        </footer>
-        
-    </body>
+        </div>
+        <div class="nav_item">
 
-    <script src="./js/index.js"></script>
+            <a href="./menu/portfolio.html" target="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-briefcase" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 3px;">
+                    <path
+                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                </svg>
+                Portfolio</a>
+        </div>
+        <div class="nav_item">
+
+            <a href="./menu/contact.html" target="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-send"
+                    viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 3px;">
+                    <path
+                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                </svg>
+                Contact</a>
+        </div>
+    </nav>
+    <div style="height: auto; overflow: hidden;">
+        <div>
+            <iframe id="myIframe" src="./menu/home.html" frameborder="0" scrolling="no" name="menu"></iframe>
+        </div>
+        <div>
+            <footer>
+                <p>Copyright &copy; 2023 JspStudio</p>
+            </footer>
+        </div>
+        
+
+        
+    </div>
+
+</body>
+
+<script src="./js/index.js"></script>
+
+</html>
+
+
+<!-- ================================================================================================================== -->
+
+
+<html>
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta content="minimum-scale=1,width=device-width,maximum-scale=1,user-scalable=no" name="viewport">
+    <link rel="apple-touch-icon" href="./pav.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./pavv.png" sizes="70x70">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" charset="UTF-8"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-391QBE3WE5&amp;l=dataLayer&amp;cx=c"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-163339603-1"></script>
     
+    <title>OliveStone</title>
+    
+</head>
+
+<body class=""><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="wrap">
+            <div class="youtube none"><iframe title="youtube-video" frameborder="0" allow="autoplay"
+                    allowfullscreen=""></iframe></div>
+            <div
+                style="z-index: 999; display: block; position: fixed; border-radius: 50%; pointer-events: none; width: 15px; height: 15px; background-color: rgba(43, 191, 102, 0.4); transition: opacity 0.15s ease-in-out 0s, transform 0.15s ease-in-out 0s; backface-visibility: hidden; will-change: transform; transform: translateZ(0px) scale(1); opacity: 1; top: 89px; left: 1048px;">
+            </div>
+            <div
+                style="z-index: 999; display: block; position: fixed; border-radius: 50%; width: 25px; height: 25px; pointer-events: none; background-color: rgb(43, 191, 102); transition: opacity 0.15s ease-in-out 0s, transform 0.25s ease-in-out 0s; backface-visibility: hidden; will-change: transform; transform: translateZ(0px) scale(1); opacity: 1; top: 89px; left: 1048px;">
+            </div>
+            <div>
+                <div class="nav__side__wrap ">
+                    <div class="nav__sdie__overlay"></div>
+                </div>
+                <div class="nav__side__menu_wrap " style="position: fixed; right: 0px; width: 180px; height: 919px;">
+                    <div class="nav__side__menu"
+                        style="background: rgb(255, 255, 255); width: 100%; height: 100%; overflow: hidden; clip-path: inset(90% 25px 50px 60%); transition: none 0s ease 0s;">
+                        <ul class="nav__side__content">
+                            <li style="opacity: 0; transform: translateY(50px) translateZ(0px);"><span class="logo link"
+                                    value="/"></span></li>
+                            <li style="opacity: 0; transform: translateY(50px) translateZ(0px);">
+                                <div class="youtube_link">
+                                    <ul class="animation-wrap">
+                                        <li class="animation"></li>
+                                        <li class="animation"></li>
+                                        <li class="animation"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li style="opacity: 0; transform: translateY(50px) translateZ(0px);"><span class="link"
+                                    value="/work">Work</span></li>
+                            <li style="opacity: 0; transform: translateY(50px) translateZ(0px);"><span class="link"
+                                    value="/contact">Contact</span></li>
+                            <li style="opacity: 0; transform: translateY(50px) translateZ(0px);"><a class="link"
+                                    href="https://blog.naver.com/olivestone12" target="_blank"
+                                    rel="noopener noreferrer">Blog</a></li>
+                        </ul>
+                        <div class="nav__side__space"></div>
+                    </div>
+                </div>
+                <div class="nav__side__toggle" style="opacity: 1; transition-delay: 0.3s; z-index: 9000;"></div>
+                <div class="nav__container" style="">
+                    <div class="nav__bar fixed">
+                        <div class="nav__content">
+                            <div class="nav__logo" style="cursor: none;"></div>
+                            <div class="nav__menu">
+                                <div class="youtube_link">
+                                    <ul class="animation-wrap">
+                                        <li class="animation">
+                                            <div class="first"></div>
+                                        </li>
+                                        <li class="animation"></li>
+                                        <li class="animation"></li>
+                                    </ul>
+                                </div>
+                                <div class="link">Work</div>
+                                <div class="link">Contact</div>
+                                <div><a href="https://blog.naver.com/olivestone12" target="_blank"
+                                        rel="noopener noreferrer">Blog</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drag-bar link scroll"><svg class="drag-proxy-btn " viewBox="0 0 60 60" width="58px"
+                        height="58px">
+                        <path fill="none" stroke-width="4" stroke-dasharray="0"
+                            d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0" class="proxy-bg"></path>
+                        <path class="arrow" fill="none" stroke-width="4" d="M15,30 L 25,20 L 35,30"></path>
+                        <path fill="none" stroke-width="4" stroke-dasharray="60.98521543323674px 125.68138122558594px"
+                            d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0" stroke-dashoffset="0px"
+                            style="transform: translateX(5px) translateY(5px) scaleX(-1) rotate(90deg); transform-origin: 0px 0px;">
+                        </path>
+                    </svg></div>
+                <div class="olive detail">
+                    <div class="masthead olive">
+                        <div class="bg next"
+                            style="position: absolute; background-image: url(&quot;https://api.olivestonelab.com/2021/02/01/GVSlfoauPtQukTHHOYIuXUybZIXatIYC.mp4&quot;);">
+                            </div>
+                        <div class="olive-content">
+                            <div class="text-wrap on animated fadeInUp">
+                                <h6>삼성전자</h6>
+                                <div>
+                                    <h1>POD ICON DESIGN</h1>
+                                </div>
+                                <div>Motion, Icon Styling, Mockup Sample</div>
+                                <br>
+                                <p>10.2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-item" style="background-color: rgb(255, 255, 255);">
+                        <div class="animated fadeInUp delay" style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/NpypwDZPATiZZZZSZxAoMLVPFljKmnMr.png">
+                            </div>
+                        </div>
+                        <div class="animated fadeInUp delay" style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/QeHkAHveweykfCAtLGiZyxJGnuoIBmNd.png">
+                            </div>
+                        </div>
+                        <div class="animated fadeInUp delay" style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/AdNSJNxUYgOJfDWFquyadcaTZCIbPjvm.png">
+                            </div>
+                        </div>
+                        <div class="animated fadeInUp delay" style="opacity: 0;">
+                            <div class="video_wrap">
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animated fadeInUp delay" style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/PXfvyvkAoLQpfIBVyCynlmbzQFHnvJXK.png">
+                            </div>
+                        </div>
+                        <div class="animated fadeInUp delay" style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/bFjHFqEvkdQBwwRFFscVaBTNfQewACPj.png">
+                            </div>
+                        </div>
+                        <div class="animated fadeInUp delay" style="opacity: 0;">
+                            <div class="video_wrap">
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animated fadeInUp delay" style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/ExIOhInFebkIwCnCljXqgoNrWPmltQdH.png">
+                            </div>
+                        </div>
+                        <div style="opacity: 0;">
+                            <div class="video_wrap">
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/loSbeKDaJLhmizbjVnswpsiQHsvHqonN.png">
+                            </div>
+                        </div>
+                        <div style="opacity: 0;">
+                            <div class="video_wrap">
+                                <div>
+                                    <div>
+                                        <video loop="" autoplay="" muted="" playsinline="" webkit-playsinline=""
+                                            class="bg-video full" key="0"
+                                            src="https://api.olivestonelab.com/2021/02/01/scysvRuaimeNpiwLSQmQGeqrsyIDrEOn.mp4"
+                                            type="video/mp4">
+                                            <source
+                                                src="https://api.olivestonelab.com/2021/02/01/scysvRuaimeNpiwLSQmQGeqrsyIDrEOn.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/RUvxRQUZNjvQmnxTRJvrTLZGrPrDHOGL.png">
+                            </div>
+                        </div>
+                        <div style="opacity: 0;">
+                            <div class="video_wrap"><img class="full" alt="imgType"
+                                    src="https://api.olivestonelab.com/2021/02/01/rhiwQqRjWhPydetKYvOjNmwREiaVvBiS.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-members olive-content">
+                        <div>
+                            <h6>PROJECT MEMBER</h6>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>UI Designer</td>
+                                        <td>KIM Chaehyun, Park Sewon, KANG Dayeon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UI Interaction Designer</td>
+                                        <td>KANG Dayeon</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="next-case-container   ">
+                        <div class="next-case olive">
+                            <div class="bg next"
+                                style="background-image: url(&quot;https://api.olivestonelab.com/2020/12/03/yEgywmWCFnQCNvUFckTmVgpsuFYDPKFp.mp4&quot;);">
+                                <video loop="" autoplay="" class="bg-video">
+                                    <source
+                                        src="https://api.olivestonelab.com/2020/12/03/yEgywmWCFnQCNvUFckTmVgpsuFYDPKFp.mp4"
+                                        type="video/mp4">
+                                </video></div>
+                            <div class="olive-content next-case-content">
+                                <div>
+                                    <h6>Next Project</h6>
+                                    <div class="next-case-line"></div>
+                                </div><svg class="next-case-title"><text y="70%">MYCEL Branding UI/UX</text></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>!function (e) { function t(t) { for (var n, l, i = t[0], f = t[1], a = t[2], c = 0, s = []; c < i.length; c++)l = i[c], Object.prototype.hasOwnProperty.call(o, l) && o[l] && s.push(o[l][0]), o[l] = 0; for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n]); for (p && p(t); s.length;)s.shift()(); return u.push.apply(u, a || []), r() } function r() { for (var e, t = 0; t < u.length; t++) { for (var r = u[t], n = !0, i = 1; i < r.length; i++) { var f = r[i]; 0 !== o[f] && (n = !1) } n && (u.splice(t--, 1), e = l(l.s = r[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function l(t) { if (n[t]) return n[t].exports; var r = n[t] = { i: t, l: !1, exports: {} }; return e[t].call(r.exports, r, r.exports, l), r.l = !0, r.exports } l.m = e, l.c = n, l.d = function (e, t, r) { l.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r }) }, l.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, l.t = function (e, t) { if (1 & t && (e = l(e)), 8 & t) return e; if (4 & t && "object" == typeof e && e && e.__esModule) return e; var r = Object.create(null); if (l.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: e }), 2 & t && "string" != typeof e) for (var n in e) l.d(r, n, function (t) { return e[t] }.bind(null, n)); return r }, l.n = function (e) { var t = e && e.__esModule ? function () { return e.default } : function () { return e }; return l.d(t, "a", t), t }, l.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, l.p = "./"; var i = this.webpackJsonpolivestone = this.webpackJsonpolivestone || [], f = i.push.bind(i); i.push = t, i = i.slice(); for (var a = 0; a < i.length; a++)t(i[a]); var p = f; r() }([])</script>
+    <!-- <script src="./static/js/2.019ee2bf.chunk.js"></script>
+    <script src="./static/js/main.efbd8dc1.chunk.js"></script> -->
+</body>
+
 </html>
