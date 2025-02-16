@@ -10,6 +10,15 @@
 		$body = $('body'),
 		$nav = $('#nav');
 
+		// 페이지가 완전히 로드되었을 때 실행 (jQuery 사용)
+		// $window.on('load', function() {
+		// 	setTimeout(function() {
+		// 	  // jQuery로 숨기고 보이기
+		// 	  $('#loading').hide();
+		// 	  $('#main').show();
+		// 	}, 1000); // 1초 지연 후 실행
+		//   });
+
 	// Breakpoints.
 		breakpoints({
 			wide:      [ '961px',  '1880px' ],

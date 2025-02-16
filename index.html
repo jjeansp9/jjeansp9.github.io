@@ -8,24 +8,23 @@
 	<meta property="og:url" content="https://jjeansp9.github.io">
 	<!-- <meta property="og:title" content="박진솔 개발자 포트폴리오"> -->
 	<meta property="og:type" content="website">
-	<link rel="shortcut icon" href="./images/avatar.jpg" type="image/x-icon" />
-	<link rel="icon" href="./images/avatar.jpg" type="image/x-icon" />
-	<meta property="og:title" content="박진솔 개발자 포트폴리오">
+	<link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+	<link rel="icon" href="./images/icon.png" type="image/x-icon" />
+	<meta property="og:title" content="개발자 박진솔 포트폴리오">
 	<meta property="og:description" content="안드로이드 개발자, 박진솔의 포트폴리오입니다.">
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<title>박진솔 개발자 포트폴리오</title>
+	<title>박진솔 | 개발자 포트폴리오</title>
 </head>
 
 <body class="is-preload">
 
 	<!-- Header -->
 	<div id="header">
-
 		<div class="top">
 
 			<!-- Logo -->
 			<div id="logo">
-				<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+				<span class="image avatar48"><img src="./images/profile.jpg" alt="" /></span>
 				<h1 id="title">박진솔</h1>
 				<p>안드로이드 앱 개발자</p>
 			</div>
@@ -59,7 +58,11 @@
 
 	</div>
 
+	<!-- 로딩 UI -->
+	<!-- <div id="loading"><div class="spinner"></div></div> -->
+
 	<!-- Main -->
+	<!-- <div id="main" style="display:none;"> -->
 	<div id="main">
 
 		<!-- Intro -->
@@ -85,20 +88,11 @@
 					<h2>About Me</h2>
 				</header>
 
-				<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-				<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-					ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-					laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-					parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-					dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-					ornare iaculis.</p> -->
-
 					<section class="animated-section">
 						<!-- 첫 번째 행: 프로필 이미지/이름과 Profile 정보를 같은 컨테이너 안에 배치 -->
 						<div class="profile-container">
 						  <div class="header">
-							<img src="./images/bg.png" alt="프로필 이미지">
+							<img src="./images/profile.jpg" alt="">
 						  </div>
 						  
 						  <div class="about">
@@ -106,24 +100,50 @@
 							<p class="content">안녕하세요. 안드로이드 앱 개발자 박진솔입니다.<br>클라리넷 전공에서 IT로 전향한 저는, 예술적 감각과 창의력을 바탕으로 혁신적인 앱 개발을 통해 사람들의 일상에 긍정적 변화를 선사하고자 합니다. 그리고 도전으로 미래를 개척합니다.</p>
 						  </div>
 						</div>
-						
-						<!-- <div class="profile">
+
+						<div class="profile">
 							<p class="title">Profile</p>
-							<p>Name 박진솔</p>
+							<!-- <p>Name 박진솔</p>
 							<p>Birth 1993.5.1</p>
-							<p>Mail jjeansp9@gmail.com</p>
-						  </div> -->
-				
-						<div class="education">
-						  <p class="title">Education</p>
-						  <p>학력 관련된 것 나열</p>
-						  <p>학력 관련된 것 나열</p>
+							<p>Mail jjeansp9@gmail.com</p> -->
+							<p class="edu-item">
+								<span class="edu-date">Name</span>
+								<span class="edu-desc">박진솔</span>
+							</p>
+							<p class="edu-item">
+								<span class="edu-date">Birth</span>
+								<span class="edu-desc">1993.5.1</span>
+							</p>
+							
 						</div>
 
-						<div class="experience">
+						<div class="education">
+							<p class="title">Education</p>
+							<p class="edu-item">
+							  <span class="edu-date">2019.10</span>
+							  <span class="edu-desc">Crd De Bourg-La-Reine/Sceaux DEM(석사) 과정 중퇴</span>
+							</p>
+							<p class="edu-item">
+							  <span class="edu-date">2018.02</span>
+							  <span class="edu-desc">목원대학교 관현악학부 학사 졸업</span>
+							</p>
+						  </div>
+
+						<div class="education">
 						  <p class="title">Experience</p>
-						  <p>내 경력도 여기에 나열</p>
-						  <p>내 경력도 여기에 나열</p>
+						  <p class="edu-item">
+							<span class="edu-date">2023.02 ~ 2024.08</span>
+							<span class="edu-desc">아바드(주) 개발팀 근무</span>
+						  </p>
+						  <p class="edu-item">
+							<span class="edu-date">2017.09 ~ 2018.06</span>
+							<span class="edu-desc">대전시립교향악단 객원 연주</span>
+						  </p>
+						  <p class="edu-item">
+							<span class="edu-date">2017.01 ~ 2018.08</span>
+							<span class="edu-desc">우리동네 오케스트라 클라리넷 강사 역임</span>
+						  </p>
+
 						</div>
 					  </section>
 
@@ -146,50 +166,24 @@
 				<div class="row">
 					<div class="col-4 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/app1.png" alt="" /></a>
+							<a href="https://play.google.com/store/apps/details?id=com.jspstudio.bitcoinproject" class="image fit"><img src="images/app1.png" alt="" /></a>
 							<header>
-								<h3>Ipsum Feugiat</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-							<header>
-								<h3>Rhoncus Semper</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-							<header>
-								<h3>Rhoncus Semper</h3>
+								<h3>비트업</h3>
 							</header>
 						</article>
 					</div>
 					
 					<div class="col-4 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+							<a href="#" class="image fit"><img src="images/app2.png" alt="" /></a>
 							<header>
-								<h3>Magna Nullam</h3>
+								<h3>Inclar</h3>
 							</header>
 						</article>
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+							<a href="#" class="image fit"><img src="images/app3.png" alt="" /></a>
 							<header>
-								<h3>Natoque Vitae</h3>
-							</header>
-						</article>
-					</div>
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-							<header>
-								<h3>Dolor Penatibus</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-							<header>
-								<h3>Orci Convallis</h3>
+								<h3>메이플 아이템 강화앱</h3>
 							</header>
 						</article>
 					</div>
@@ -234,10 +228,9 @@
 
 		<!-- Copyright -->
 		<ul class="copyright">
-			<li>&copy; Untitled. All rights reserved.</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			<li>&copy; 2025 박진솔. All rights reserved.</li>
+			<!-- <li><a href="mailto:jjeansp9@gmail.com">jjeansp9@gmail.com</a></li> -->
 		</ul>
-
 	</div>
 
 	<!-- Scripts -->
