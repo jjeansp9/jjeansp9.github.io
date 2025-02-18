@@ -2655,10 +2655,8 @@ button:active,
 
 #footer .copyright li {
 	display: inline-block;
-	line-height: 1em;
-	border-left: solid 1px rgba(128, 128, 128, 0.35);
-	padding: 0 0 0 0.5em;
-	margin: 0 0 0 0.5em;
+	color: #333;
+	font-size: 14px;
 }
 
 #footer .copyright li:first-child {
