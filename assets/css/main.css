@@ -114,6 +114,11 @@ body {
 	line-height: 1;
 }
 
+.menu-title {
+	color: #000;
+	font-weight: bold;
+}
+
 /* 애니메이션을 위한 CSS 추가 */
 .section-hidden {
 	opacity: 0;
@@ -279,7 +284,7 @@ h6 a strong {
 	opacity: 0;
   transform: translateY(50%);
   font-size: 1.7em;
-  animation: slideUpFade 1s ease-out forwards 2s;
+  animation: slideUpFade 1s ease-out forwards 2.2s;
 }
 
 @keyframes slideUpFade {
@@ -682,6 +687,7 @@ br.clear {
 	box-sizing: border-box;
 	align-items: stretch;
 	justify-content: center; /* 수평 가운데 정렬 */
+	margin-bottom: 40px;
 }
 
 .row>* {
@@ -868,7 +874,6 @@ br.clear {
 }
 
 .row {
-	margin-top: -40px;
 	margin-left: -40px;
 }
 
@@ -2407,19 +2412,33 @@ button:active,
 /* Item */
 
 .item {
-	box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05), 0 0 6px lightgray;
 	margin-bottom: 40px;
+	border-radius: 16px;
+	overflow: hidden;
+	transition: transform 0.3s ease; /* 변환 애니메이션 효과 */
+	-webkit-user-drag: none; /* Chrome, Safari 등 */
+	user-drag: none;
+	-webkit-user-select: none; /* 크롬, 사파리 등 */
+	-moz-user-select: none;    /* Firefox */
+	-ms-user-select: none;     /* IE, Edge */
+	user-select: none;         /* 표준 */
 }
+.item:hover {
+	transform: scale(1.03); /* 5% 확대 */
+  }
 
 .item header {
 	background: #fff;
 	margin: 0;
-	padding: 1em 0 1em 0;
-	font-size: 0.8em;
+	padding: 0.8em 0 0.8em 0;
 }
 
 .item header h3 {
-	font-size: 1em;
+	font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1b1b1b;
 }
 
 /* Icons */
