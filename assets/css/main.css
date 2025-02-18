@@ -213,7 +213,7 @@ html {
 
 body {
 	background: #fff;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
 	font-size: 19pt;
 	font-weight: 300;
 	line-height: 1.75em;
@@ -236,7 +236,7 @@ body.is-preload *:after {
 input,
 textarea,
 select {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
 	font-size: 19pt;
 	font-weight: 300;
 	line-height: 1.75em;
@@ -362,11 +362,12 @@ h6 a strong {
 	margin-bottom: 10px;
 	padding-bottom: 5px;
 	border-bottom: 0px;
-	color: #444;
+	color: #333;
   }
   .profile-container .about .content {
 	text-align: start;
 	line-height: 1.8;
+	color: #555;
   }
   
   /* 세 번째 행: Education과 Experience를 좌우 배치 */
@@ -382,17 +383,34 @@ h6 a strong {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid #ccc;
-	color: #444;
+	color: #333;
   }
   
   /* 본문 텍스트 스타일 (공통) */
   .animated-section p:not(.title) {
-	font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
     font-size: 16px;
 	line-height: 1.5;
 	color: #666;
 	margin-bottom: 8px;
   }
+
+  #contact-p {
+	display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000; /* 텍스트 색상 */
+	font-size: 16px;
+  }
+
+  #contact-p::before,
+	#contact-p::after {
+	content: "";
+	flex: 1;
+	border-bottom: 1px solid #000; /* 선의 스타일, 색상 조절 가능 */
+	margin: 0px 10px; /* 텍스트와 선 사이의 간격 */
+	padding-left: 8px;
+	padding-right: 8px;
+	}
 
   .education {
 	margin: 20px 0;
@@ -405,7 +423,7 @@ h6 a strong {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid #ccc;
-	color: #444;
+	color: #333;
   }
   
   .education .edu-item {
@@ -425,7 +443,7 @@ h6 a strong {
   .education .edu-desc {
 	flex: 1;
 	text-align: right;  /* 설명은 오른쪽 정렬 */
-	color: #666;
+	color: #555;
   }
 
   .profile .edu-item {
@@ -448,7 +466,7 @@ h6 a strong {
   .profile .edu-desc {
 	flex: 1;
 	text-align: right;  /* 설명은 오른쪽 정렬 */
-	color: #666;
+	color: #555;
   }
 
   
@@ -2413,6 +2431,7 @@ button:active,
 
 .item {
 	box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05), 0 0 6px lightgray;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	border-radius: 16px;
 	overflow: hidden;
@@ -2435,7 +2454,6 @@ button:active,
 }
 
 .item header h3 {
-	font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	color: #1b1b1b;
@@ -2754,6 +2772,45 @@ button:active,
 	position: relative;         /* pseudo-element의 위치 기준 */
 	overflow: hidden;           /* pseudo-element가 영역 밖으로 나가지 않게 */
   }
+
+  /* 공통 스타일: 두 pseudo-element 모두 */
+/* #main > section.one::before,
+#main > section.one::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.2);
+  z-index: 0;
+}
+
+#main > section.one::before {
+	background-image: url("../../images/bg1.jpg");
+	opacity: 1;
+	animation: fadeOut 2s ease forwards 1.7s;
+  }
+  
+  #main > section.one::after {
+	background-image: url("../../images/bg2.png");
+	opacity: 0;
+	animation: fadeIn 2s ease forwards 1.5s;
+  }
+  
+  @keyframes fadeOut {
+	to {
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes fadeIn {
+	to {
+	  opacity: 1;
+	}
+  } */
   
   /* 배경 이미지를 ::before에 적용 */
   #main > section.one::before {
@@ -2763,11 +2820,11 @@ button:active,
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url("../../images/bg3.png");
+	background-image: url("../../images/bg2.png");
 	background-repeat: no-repeat;
-	background-size: cover;     /* 필요에 따라 contain 등으로 변경 가능 */
-	filter: brightness(0.2);    /* brightness 값 0.7로 이미지 어둡게 */
-	z-index: 0;                 /* 컨텐츠 뒤에 배치 */
+	background-size: cover;     
+	filter: brightness(0.2);    
+	z-index: 0;                 
   }
   
   /* 실제 내용은 pseudo-element 위에 오도록 설정 */

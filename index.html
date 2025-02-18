@@ -13,6 +13,7 @@
 	<meta property="og:title" content="개발자 박진솔 포트폴리오">
 	<meta property="og:description" content="안드로이드 개발자, 박진솔의 포트폴리오입니다.">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/career.css">
 	<title>박진솔 | 개발자 포트폴리오</title>
 </head>
 
@@ -36,7 +37,7 @@
 					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Project</span></a></li>
 					<!-- <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a> -->
-						<li><a href="#contact" id="contact-link"><span class="icon solid fa-briefcase">Career</span></a></li>
+					<li><a href="#contact" id="contact-link"><span class="icon solid fa-briefcase">Career</span></a></li>
 				</ul>
 			</nav>
 
@@ -45,14 +46,15 @@
 		<div class="bottom">
 
 			<!-- Social Icons -->
+			 <p id="contact-p">CONTACT</p>
 			<ul class="icons">
 				<!-- <li><a href="https://github.com/jjeansp9" class="icon brands fa-github"><span class="label">Github</span></a></li> -->
 				<li>
-					<a href="https://github.com/jjeansp9" class="icon brands fa-github" target="_blank" rel="noopener noreferrer">
+					<a href="https://github.com/jjeansp9" class="icon brands fa-github fa-lg" target="_blank" rel="noopener noreferrer">
 					  <span class="label">Github</span>
 					</a>
 				  </li>
-				<li><a href="mailto:jjeansp9@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="mailto:jjeansp9@gmail.com" class="icon solid fa-envelope fa-lg"><span class="label">Email</span></a></li>
 			</ul>
 
 		</div>
@@ -98,7 +100,7 @@
 						  
 						  <div class="about">
 							<p class="title">미래를 향한 발걸음</p>
-							<p class="content">안녕하세요. 안드로이드 앱 개발자 박진솔입니다.<br>클라리넷 전공에서 IT로 전향한 저는, 예술적 감각과 창의력을 바탕으로 혁신적인 앱 개발을 통해 사람들의 일상에 긍정적 변화를 선사하고자 합니다. 그리고 도전으로 미래를 개척합니다.</p>
+							<p class="content">안녕하세요. 클라리넷 전공자이자, 안드로이드 앱 개발자인 박진솔입니다.<br>클래식에서 IT로 전향한 저는, 예술적 감각과 창의력을 바탕으로 혁신적인 앱 개발을 통해 사람들의 일상에 긍정적 변화를 선사하고자 합니다. 그리고 도전으로 미래를 개척합니다.</p>
 						  </div>
 						</div>
 
@@ -119,6 +121,14 @@
 							<p class="edu-item">
 								<span class="edu-date">주소</span>
 								<span class="edu-desc">경기 수원시</span>
+							</p>
+							<p class="edu-item">
+								<span class="edu-date">연락처</span>
+								<span class="edu-desc">010-2074-3853</span>
+							</p>
+							<p class="edu-item">
+								<span class="edu-date">이메일</span>
+								<span class="edu-desc">jjeansp9@gmail.com</span>
 							</p>
 							
 						</div>
@@ -170,37 +180,52 @@
 
 				<div class="row">
 					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="" class="image fit"><img src="images/app1.png" alt="" /></a>
-							<header>
+						<a href="" class="item-link">
+							<article class="item">
+							  <div class="image fit">
+								<img src="images/app1.png" />
+							  </div>
+							  <header>
 								<h3>비트업</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/app2.png" alt="" /></a>
-							<header>
+							  </header>
+							</article>
+						</a>
+						<a href="" class="item-link">
+							<article class="item">
+							  <div class="image fit">
+								<img src="images/app2.png" />
+							  </div>
+							  <header>
 								<h3>Inclar</h3>
-							</header>
-						</article>
+							  </header>
+							</article>
+						</a>
 					</div>
 					
 					
 					<div class="col-4 col-12-mobile">
-						
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/app3.png" alt="" /></a>
-							<header>
+
+						<a href="" class="item-link">
+							<article class="item">
+							  <div class="image fit">
+								<img src="images/app3.png" />
+							  </div>
+							  <header>
 								<h3>메이플 아이템 강화앱</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="/files/travin.pdf" class="image fit" target="_blank" rel="noopener noreferrer">
+							  </header>
+							</article>
+						</a>
+
+						<a href="/files/travin.pdf" class="item-link" target="_blank" rel="noopener noreferrer">
+							<article class="item">
+							  <div class="image fit">
 								<img src="images/app4.png" alt="Travin PDF" />
-							  </a>
-							<header>
+							  </div>
+							  <header>
 								<h3>Travin</h3>
-							</header>
-						</article>
+							  </header>
+							</article>
+						</a>
 					</div>
 				</div>
 
@@ -215,23 +240,63 @@
 					<h2 class="menu-title">CAREER</h2>
 				</header>
 
-				<!-- <p>Elementum sem parturient nulla quam placerat viverra
-					mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-					donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-					orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-				<form method="post" action="#">
-					<div class="row">
-						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-						<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-						<div class="col-12">
-							<textarea name="message" placeholder="Message"></textarea>
+				<main>
+					<div class="timeline-container">
+					  <div class="timeline-item" id="avad">
+						<div class="timeline-icon">
+						  <!-- Inline SVG logo for Danggeun Market -->
+						  <img src="images/app4.png" alt="Travin PDF" />
 						</div>
-						<div class="col-12">
-							<input type="submit" value="Send Message" />
+						<div class="timeline-content">
+						  <h2>아바드(주)</h2>
+						  <div class="timeline-section">
+							<p>2022.01 - 2023.01</p>
+						  </div>
+						  <div class="timeline-section">
+							<h3>담당 업무</h3>
+							<ul>
+							  <li>.</li>
+							  <li>.</li>
+							  <li>.</li>
+							</ul>
+						  </div>
+						  <div class="timeline-section">
+							<h3>사용 기술</h3>
+							<p>.</p>
+						  </div>
 						</div>
+					  </div>
+				
+					  <!-- <div class="timeline-item" id="a">
+						<div class="timeline-icon">
+						  <svg width="60" height="60" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="40" cy="40" r="30" fill="#66BB6A" />
+							<text x="40" y="46" text-anchor="middle" fill="#121212" font-size="20" font-family="Arial" font-weight="bold">
+							  
+							</text>
+						  </svg>
+						</div>
+						<div class="timeline-content">
+						  <h2>오픈 갤러리 (Open Gallery)</h2>
+						  <div class="timeline-section">
+							<p>2021.06 - 2022.12</p>
+						  </div>
+						  <div class="timeline-section">
+							<h3>담당 업무</h3>
+							<ul>
+							  <li>서비스 기획 및 개발</li>
+							  <li>프론트엔드 시스템 설계</li>
+							  <li>UX 리서치 및 테스트</li>
+							</ul>
+						  </div>
+						  <div class="timeline-section">
+							<h3>사용 기술</h3>
+							<p>HTML, CSS, JavaScript, Vue</p>
+						  </div>
+						</div>
+					  </div> -->
 					</div>
-				</form> -->
+				  </main>
 
 			</div>
 		</section>
