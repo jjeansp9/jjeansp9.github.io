@@ -2185,6 +2185,11 @@ br.clear {
 section,
 article {
 	margin-bottom: 3em;
+	
+}
+
+article:hover {
+	cursor: pointer;
 }
 
 section> :last-child,
