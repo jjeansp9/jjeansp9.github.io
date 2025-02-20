@@ -151,8 +151,9 @@
 				// 스크롤 이벤트 감지
 				$(window).on('scroll', function() {
 					console.log("Scroll event triggered!"); // 스크롤 이벤트가 발생하는지 확인
-					animateOnScroll('#portfolio');
 					animateOnScroll('#about');
+					animateOnScroll('#skill');
+					animateOnScroll('#portfolio');
 					animateOnScroll('#contact');
 				});
 			

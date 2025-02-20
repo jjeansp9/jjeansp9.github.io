@@ -1,5 +1,5 @@
 :root {
-  --timeline-icon-size: 100px;
+  --timeline-icon-size: 160px;
 }
 
 /* Timeline container */
@@ -7,22 +7,22 @@
   position: relative;
 }
 
-.timeline-container::before {
+/* .timeline-container::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: calc(var(--timeline-icon-size) / 2);
-  width: 2px;
-  background-color: #000;
-}
+  width: 1.5px;
+  background-color: #b3b3b3;
+} */
 
 /* Timeline item */
 .timeline-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 40px;
   opacity: 0;
+  margin-bottom: 20px;
   transform: translateY(20px);
   transition: transform 2s ease, opacity 4s ease;
 }
@@ -37,8 +37,8 @@
   width: var(--timeline-icon-size);
   height: var(--timeline-icon-size);
   border-radius: 50%;
-  border: 1px solid #E0E0E0;
-  background-color: #1E1E1E;
+  border: 1.5px solid #c7c7c7;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,8 +67,9 @@
 .timeline-section h3 {
   margin: 0 0 5px;
   font-size: 18px;
-  border-bottom: 1px solid #b3b3b3;
+  /* border-bottom: 1px solid #c7c7c7; */
   padding-bottom: 3px;
+  margin-top: 20px;
   text-align: left;
   color: #333;
   font-weight: bold;
@@ -78,6 +79,20 @@
   text-align: left;
   font-size: 16px;
   color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.timeline-section p:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.timeline-section :link,
+.timeline-section :visited {
+  color: rgb(0, 75, 236);           /* 링크 색상 */
+  text-decoration: underline; /* 밑줄 */
+  cursor: pointer;       /* 마우스를 올렸을 때 손가락 모양 */
 }
 
 .timeline-section ul li {

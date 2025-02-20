@@ -134,6 +134,7 @@ body {
 /* 각 섹션에 대한 초기 상태 설정 */
 #portfolio .container,
 #about .container,
+#skill .container,
 #contact .container {
 	opacity: 0;
 	transform: translateX(-15%);
@@ -145,12 +146,15 @@ body {
 #about .container {
 	transform: translateX(-15%);
 }
-#portfolio .container {
+#skill .container {
 	transform: translateX(15%);
+}
+#portfolio .container {
+	transform: translateX(-15%);
 }
 
 #contact .container {
-	transform: translateX(-15%);
+	transform: translateX(15%);
 }
 
 ol,
@@ -303,7 +307,6 @@ h6 a strong {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
-	padding: 20px;
 	box-sizing: border-box;
   }
   .profile-container .about {
@@ -313,7 +316,7 @@ h6 a strong {
   /* 각 자식 박스의 공통 스타일 */
   .animated-section > div {
 	background: rgba(255, 255, 255, 0);
-	padding: 20px;
+	padding-top: 20px;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
 	box-sizing: border-box;
@@ -398,7 +401,7 @@ h6 a strong {
 	display: flex;
   align-items: center;
   text-align: center;
-  color: #000; /* 텍스트 색상 */
+  color: #969696; /* 텍스트 색상 */
 	font-size: 16px;
   }
 
@@ -406,7 +409,7 @@ h6 a strong {
 	#contact-p::after {
 	content: "";
 	flex: 1;
-	border-bottom: 1px solid #000; /* 선의 스타일, 색상 조절 가능 */
+	border-bottom: 1px solid #969696; /* 선의 스타일, 색상 조절 가능 */
 	margin: 0px 10px; /* 텍스트와 선 사이의 간격 */
 	padding-left: 8px;
 	padding-right: 8px;
@@ -602,16 +605,22 @@ br.clear {
 	opacity: 1;
 }
 
-#contact {
-	transform: translateY(0);
-	opacity: 1;
-}
-
 .container {
 	margin: 0 auto;
 	max-width: 100%;
 	width: 1400px;
 }
+
+#portfolio .container,
+	#about .container,
+	#skill .container,
+	#contact .container {
+		width: 65%;
+	}
+
+	.profile .edu-item {
+		width: 65%;
+	}
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
 
@@ -621,12 +630,13 @@ br.clear {
 
 	#portfolio .container,
 	#about .container,
+	#skill .container,
 	#contact .container {
 		width: 75%;
 	}
 
 	.profile .edu-item {
-		max-width: 350px;
+		width: 75%;
 	}
 
 }
@@ -639,12 +649,13 @@ br.clear {
 
 	#portfolio .container,
 	#about .container,
+	#skill .container,
 	#contact .container {
 		width: 80%;
 	}
 
 	.profile .edu-item {
-		max-width: 300px;
+		width: 80%;
 	}
 
 }
@@ -657,11 +668,12 @@ br.clear {
 
 	#portfolio .container,
 	#about .container,
+	#skill .container,
 	#contact .container {
 		width: 85%;
 	}
 	.profile .edu-item {
-		max-width: 250px;
+		width: 85%;
 	}
 }
 
@@ -673,6 +685,7 @@ br.clear {
 
 	#portfolio .container,
 	#about .container,
+	#skill .container,
 	#contact .container {
 		width: 90%;
 	}
@@ -689,6 +702,7 @@ br.clear {
 
 	#portfolio .container,
 	#about .container,
+	#skill .container,
 	#contact .container {
 		width: 95%;
 	}
@@ -2204,15 +2218,16 @@ article:last-child {
 }
 
 .image.avatar48 {
-	width: 48px;
-	height: 48px;
-	border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden; /* 이미지가 둥근 영역을 벗어나지 않도록 */
 }
 
 .image.avatar48 img {
-	width: 48px;
-	height: 48px;
-	border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지의 비율을 유지하면서 영역을 채우고 필요시 자름 */
 }
 
 .image.fit {
@@ -2841,6 +2856,10 @@ button:active,
 }
 
 #main>section.four {
+	background-color: #e8edec;
+}
+
+#main>section.five {
 	background-color: #e8edec;
 }
 

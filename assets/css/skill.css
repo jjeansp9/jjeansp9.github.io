@@ -1,0 +1,89 @@
+/* Global Styles */
+
+
+/* Container styling */
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Skills grid */
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: #333; /* Dark-colored rectangle */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+/* Button styles */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.buttons button {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ripple Effect for button clicks */
+.ripple {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-effect 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}

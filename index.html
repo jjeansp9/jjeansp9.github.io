@@ -13,6 +13,7 @@
 	<meta property="og:title" content="개발자 박진솔 포트폴리오">
 	<meta property="og:description" content="안드로이드 개발자, 박진솔의 포트폴리오입니다.">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/skill.css">
 	<link rel="stylesheet" href="assets/css/career.css">
 	<title>박진솔 | 개발자 포트폴리오</title>
 </head>
@@ -25,7 +26,7 @@
 
 			<!-- Logo -->
 			<div id="logo">
-				<span class="image avatar48"><img src="./images/profile.jpg" alt="" /></span>
+				<span class="image avatar48"><img src="./images/profile2.jpg" alt="" /></span>
 				<h1 id="title">박진솔</h1>
 				<p>안드로이드 앱 개발자</p>
 			</div>
@@ -35,8 +36,8 @@
 				<ul>
 					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+					<li><a href="#skill" id="skill-link"><span class="icon solid fa-envelope">Skill</span></a>
 					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Project</span></a></li>
-					<!-- <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a> -->
 					<li><a href="#contact" id="contact-link"><span class="icon solid fa-briefcase">Career</span></a></li>
 				</ul>
 			</nav>
@@ -100,7 +101,7 @@
 						  
 						  <div class="about">
 							<p class="title">미래를 향한 발걸음</p>
-							<p class="content">안녕하세요. 클라리넷 전공자이자, 안드로이드 앱 개발자인 박진솔입니다.<br>클래식에서 IT로 전향한 저는, 예술적 감각과 창의력을 바탕으로 혁신적인 앱 개발을 통해 사람들의 일상에 긍정적 변화를 선사하고자 합니다. 그리고 도전으로 미래를 개척합니다.</p>
+							<p class="content">안녕하세요. 클라리넷 전공자이자, 안드로이드 앱 개발자인 박진솔입니다.<br>감성적인 클래식에서 이성적IT로 전향한 저는, 예술적 감각과 창의력을 바탕으로 혁신적인 앱 개발을 통해 사람들의 일상에 긍정적 변화를 선사하고자 합니다. 그리고 도전으로 미래를 개척합니다.</p>
 						  </div>
 						</div>
 
@@ -170,8 +171,58 @@
 			</div>
 		</section>
 
+		<!-- Skill -->
+		<section id="skill" class="three">
+			<div class="container section-hidden">
+
+				<header>
+					<h2 class="menu-title">SKILL</h2>
+				</header>
+
+				<div class="skills">
+					<div class="category">
+					  <h2>Language</h2>
+					  <div class="buttons">
+						<button>Python</button>
+						<button>JavaScript</button>
+						<button>C++</button>
+						<button>Java</button>
+					  </div>
+					</div>
+					<div class="category">
+					  <h2>Frontend</h2>
+					  <div class="buttons">
+						<button>HTML</button>
+						<button>CSS</button>
+						<button>React</button>
+						<button>Svelte</button>
+					  </div>
+					</div>
+					<div class="category">
+					  <h2>Backend</h2>
+					  <div class="buttons">
+						<button>Node.js</button>
+						<button>Express</button>
+						<button>Django</button>
+						<button>Ruby on Rails</button>
+					  </div>
+					</div>
+					<div class="category">
+					  <h2>DevOps</h2>
+					  <div class="buttons">
+						<button>Docker</button>
+						<button>Kubernetes</button>
+						<button>Jenkins</button>
+						<button>AWS</button>
+					  </div>
+					</div>
+				  </div>
+
+			</div>
+		</section>
+
 		<!-- Portfolio -->
-		<section id="portfolio" class="three">
+		<section id="portfolio" class="four">
 			<div class="container section-hidden">
 
 				<header>
@@ -233,7 +284,7 @@
 		</section>
 
 		<!-- Career -->
-		<section id="contact" class="four">
+		<section id="contact" class="five">
 			<div class="container section-hidden">
 
 				<header>
@@ -244,8 +295,7 @@
 					<div class="timeline-container">
 					  <div class="timeline-item" id="avad">
 						<div class="timeline-icon">
-						  <!-- Inline SVG logo for Danggeun Market -->
-						  <img src="images/app4.png" alt="Travin PDF" />
+						  <img src="images/avad_logo.png" alt="Travin PDF" />
 						</div>
 						<div class="timeline-content">
 						  <h2>아바드(주)</h2>
@@ -253,48 +303,25 @@
 							<p>2022.01 - 2023.01</p>
 						  </div>
 						  <div class="timeline-section">
-							<h3>Project</h3>
-							<ul>
-							  <li>.</li>
-							  <li>.</li>
-							  <li>.</li>
-							</ul>
+							<h3>Skill</h3>
+							<p>Android Studio, Java, Kotlin</p>
 						  </div>
 						  <div class="timeline-section">
-							<h3>Skill</h3>
-							<p>.</p>
+							<h3>Project</h3>
+							<p>에듀패밀리(자사 서비스앱) - 버그 수정, 기능 추가, 성능 개선
+								<a href="https://play.google.com/store/apps/details?id=kr.co.avad.hsolution.edu&hl=ko&pli=1" target="_blank" rel="noopener noreferrer">
+									앱 링크
+							  	</a>
+							</p>
+							  <p>지트에듀케이션 - 외부 클라이언트 요구사항에 맞게 맞춤형 앱 제작
+								<a href="https://play.google.com/store/apps/details?id=kr.jeet.edu.student&hl=ko" target="_blank" rel="noopener noreferrer">
+									앱 링크
+								</a>
+							  </p>
 						  </div>
 						</div>
 					  </div>
 				
-					  <!-- <div class="timeline-item" id="a">
-						<div class="timeline-icon">
-						  <svg width="60" height="60" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-							<circle cx="40" cy="40" r="30" fill="#66BB6A" />
-							<text x="40" y="46" text-anchor="middle" fill="#121212" font-size="20" font-family="Arial" font-weight="bold">
-							  
-							</text>
-						  </svg>
-						</div>
-						<div class="timeline-content">
-						  <h2>오픈 갤러리 (Open Gallery)</h2>
-						  <div class="timeline-section">
-							<p>2021.06 - 2022.12</p>
-						  </div>
-						  <div class="timeline-section">
-							<h3>담당 업무</h3>
-							<ul>
-							  <li>서비스 기획 및 개발</li>
-							  <li>프론트엔드 시스템 설계</li>
-							  <li>UX 리서치 및 테스트</li>
-							</ul>
-						  </div>
-						  <div class="timeline-section">
-							<h3>사용 기술</h3>
-							<p>HTML, CSS, JavaScript, Vue</p>
-						  </div>
-						</div>
-					  </div> -->
 					</div>
 				  </main>
 
@@ -309,7 +336,6 @@
 		<!-- Copyright -->
 		<ul class="copyright">
 			<li>&copy; 2025 Park Jin Sol. All rights reserved.</li>
-			<!-- <li><a href="mailto:jjeansp9@gmail.com">jjeansp9@gmail.com</a></li> -->
 		</ul>
 	</div>
 
