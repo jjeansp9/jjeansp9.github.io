@@ -21,15 +21,7 @@
 .timeline-item {
   display: flex;
   align-items: flex-start;
-  opacity: 0;
   margin-bottom: 20px;
-  transform: translateY(20px);
-  transition: transform 2s ease, opacity 4s ease;
-}
-
-.timeline-item.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Timeline icon */
