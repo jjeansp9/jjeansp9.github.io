@@ -1,7 +1,7 @@
 .dialog {
     display: none; /* 기본적으로 숨김 */
     position: fixed;
-    z-index: 1000;
+    z-index: 10003;
     left: 0;
     top: 0;
     width: 100%;
@@ -20,7 +20,7 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    width: 80%;
+    width: 50%;
     max-height: 70%;
     overflow-y: auto;
     position: relative;
