@@ -22,19 +22,7 @@
 <body class="is-preload">
 
 	<!-- 다이얼로그 로드 -->
-	<div id="dialogContainer">
-		<!-- dialog.html의 내용 -->
-		<div id="customDialog" class="dialog">
-		  <div class="dialog-content">
-			<span class="close">&times;</span>
-			<h2>Custom Dialog Title</h2>
-			<div class="dialog-body">
-			  <p>여기에 내용이 길어지면 스크롤이 가능하도록 구성합니다.</p>
-			  <p>추가 내용...</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
+	<div id="dialogContainer"></div>
 
 	<!-- Header -->
 	<div id="header">
@@ -273,6 +261,8 @@
 							  </header>
 							</article>
 
+							
+
 						<a href="/files/travin.pdf" class="item-link" target="_blank" rel="noopener noreferrer">
 							<article class="item">
 							  <div class="image fit">
@@ -356,16 +346,6 @@
 	<script src="assets/js/main.js"></script>
 
 	<script src="assets/js/dialog.js"></script>
-  
-  <script>
-    document.getElementById("trigger").addEventListener("click", function() {
-      if (typeof window.openDialog === 'function') {
-        window.openDialog();
-      } else {
-        console.error("openDialog 함수가 로드되지 않았습니다.");
-      }
-    });
-  </script>
 
 </body>
 
