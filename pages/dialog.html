@@ -9,10 +9,15 @@
   <div id="customDialog" class="dialog">
     <div class="dialog-content">
       <span class="close">&times;</span>
-      <h2>Custom Dialog Title</h2>
-      <div class="dialog-body">
-        <p>여기에 내용이 길어지면 스크롤이 가능하도록 구성합니다.!!!!</p>
-        <p>추가 내용...</p>
+      <h2 id="dialogTitle">Custom Dialog Title</h2>
+      <img id="dialogImage" src="" alt="Dialog Image" style="max-width: 100%; margin-bottom: 1em;">
+      <div id="dialogContent" class="dialog-body">
+        <p>여기에 내용이 길어지면 스크롤이 가능하도록 구성합니다.</p>
+      </div>
+
+      <!-- PDF 표시 영역 (초기 숨김) -->
+      <div id="dialogPDF" style="display: none;">
+        <iframe id="pdfFrame" src="" width="100%" height="600px" style="border: none;"></iframe>
       </div>
     </div>
   </div>

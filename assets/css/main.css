@@ -783,7 +783,7 @@ br.clear {
 }
 
 .row>.col-4 {
-	width: 33.33333%;
+	width: 50%;
 }
 
 .row>.off-4 {
@@ -2449,7 +2449,7 @@ button:active,
 
 /* Item */
 
-.item {
+.item, .items {
 	box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05), 0 0 6px lightgray;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -2463,17 +2463,17 @@ button:active,
 	-ms-user-select: none;     /* IE, Edge */
 	user-select: none;         /* 표준 */
 }
-.item:hover {
+.item:hover, .items:hover {
 	transform: scale(1.03); /* 5% 확대 */
   }
 
-.item header {
+.item header, .items header {
 	background: #fff;
 	margin: 0;
 	padding: 0.8em 0 0.8em 0;
 }
 
-.item header h3 {
+.item header h3, .items header h3 {
 	font-size: 16px;
 	font-weight: bold;
 	color: #1b1b1b;
@@ -2942,7 +2942,7 @@ button:active,
 
 	/* Item */
 
-	.item {
+	.item, .items {
 		margin-bottom: 20px;
 	}
 
@@ -3018,7 +3018,7 @@ button:active,
 
 	/* Item */
 
-	.item {
+	.item, .items {
 		margin-bottom: 15px;
 	}
 
