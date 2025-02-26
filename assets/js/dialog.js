@@ -95,18 +95,28 @@ document.addEventListener("DOMContentLoaded", function () {
             };
             updateDialogContent(data);
             dialog.classList.add("active");
+            document.body.style.overflow = "hidden";
+            const dialogBody = document.getElementById("dialogBody");
+            console.log(dialogBody.scrollHeight, dialogBody.clientHeight);
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                dialogBody.scrollTop = 0;
+              });
+            });
           });
         });
 
         // 닫기 버튼 클릭 시 다이얼로그 비활성화
         closeBtn.addEventListener("click", function () {
           dialog.classList.remove("active");
+          document.body.style.overflow = "auto";
         });
 
         // 다이얼로그 외부 클릭 시 닫기 처리
         window.addEventListener("click", function (e) {
           if (e.target === dialog) {
             dialog.classList.remove("active");
+            document.body.style.overflow = "auto";
           }
         });
       })
@@ -151,8 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // 다이얼로그 내용 업데이트 함수
   function updateDialogContent(data) {
     // 다이얼로그 내의 제목, 내용, 그리고 이미지 슬라이더 컨테이너를 선택합니다.
-    const titleEl = document.querySelector("#customDialog #dialogTitle");
-    const contentEl = document.querySelector("#customDialog #dialogContent");
+    const titleEl = document.querySelector("#customDialog #title");
+    const contentEl = document.querySelector("#customDialog #background");
     const imageListEl = document.querySelector("#customDialog #dialogImageList");
 
     if (titleEl) titleEl.textContent = data.title;

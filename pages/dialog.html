@@ -6,17 +6,16 @@
   <link rel="stylesheet" href="assets/css/dialog.css">
 </head>
 <body>
-  <!-- 다이얼로그를 담을 컨테이너 -->
   <div id="dialogContainer">
     <!-- 다이얼로그 구조 -->
     <div id="customDialog" class="dialog">
 
-      <!-- 닫기 버튼 -->
-      <span class="close">&times;</span>
-      <!-- 다이얼로그 제목 -->
-      <h2 id="dialogTitle">Custom Dialog Title</h2>
+      <div class="dialog-header">
+        <h2 id="dialogTitle">README.md</h2>
+        <span class="close">&times;</span>
+      </div>
 
-      <div class="dialog-content">
+      <div  id="dialogBody" class="dialog-content">
         <!-- 이미지 슬라이더 영역 -->
         <div id="dialogImageContainer">
           <!-- 좌측 화살표 (기본 숨김 처리) -->
@@ -29,10 +28,23 @@
           <button class="arrow right hidden" id="rightArrow">&gt;</button>
         </div>
         <!-- 다이얼로그 본문 내용 -->
-        <div id="dialogContent" class="dialog-body"></div>
-        <!-- PDF 표시 영역 (초기 숨김) -->
-        <div id="dialogPDF">
-          <iframe id="pdfFrame" src="" width="100%" height="600px" style="border: none;"></iframe>
+        <div class="dialog-body">
+
+          <h2 id="title"></h2>
+          <p id="period">2021.05 ~ 2021.07</p>
+
+          <h3 class="section">Summary</h3>
+          <p class="dialogContent" id="summary">아이템 강화 과정을 간소화하여 게임 내 전략적 의사결정과 플레이어 만족도를 향상시키는 혁신적 앱입니다.</p>
+
+          <h3 class="section" >Background</h3>
+          <p class="dialogContent" id="background"></p>
+
+          <h3 class="section" >Meaning</h3>
+          <p class="dialogContent" id="meaning">이 앱을 개발함으로서 다양한 경험을 할 수 있었습니다.</p>
+
+          <h3 class="section" >Tech Stack</h3>
+          <p class="dialogContent" id="tech_stack">Java</p>
+
         </div>
       </div>
     </div>
