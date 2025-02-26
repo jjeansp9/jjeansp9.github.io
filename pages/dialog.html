@@ -6,18 +6,34 @@
   <link rel="stylesheet" href="assets/css/dialog.css">
 </head>
 <body>
-  <div id="customDialog" class="dialog">
-    <div class="dialog-content">
-      <span class="close">&times;</span>
-      <h2 id="dialogTitle">Custom Dialog Title</h2>
-      <img id="dialogImage" src="" alt="Dialog Image" style="max-width: 100%; margin-bottom: 1em;">
-      <div id="dialogContent" class="dialog-body">
-        <p>여기에 내용이 길어지면 스크롤이 가능하도록 구성합니다.</p>
-      </div>
+  <!-- 다이얼로그를 담을 컨테이너 -->
+  <div id="dialogContainer">
+    <!-- 다이얼로그 구조 -->
+    <div id="customDialog" class="dialog">
 
-      <!-- PDF 표시 영역 (초기 숨김) -->
-      <div id="dialogPDF" style="display: none;">
-        <iframe id="pdfFrame" src="" width="100%" height="600px" style="border: none;"></iframe>
+      <!-- 닫기 버튼 -->
+      <span class="close">&times;</span>
+      <!-- 다이얼로그 제목 -->
+      <h2 id="dialogTitle">Custom Dialog Title</h2>
+
+      <div class="dialog-content">
+        <!-- 이미지 슬라이더 영역 -->
+        <div id="dialogImageContainer">
+          <!-- 좌측 화살표 (기본 숨김 처리) -->
+          <button class="arrow left hidden" id="leftArrow">&lt;</button>
+          <!-- 이미지들을 담는 컨테이너 -->
+          <div id="dialogImageList">
+            <!-- JS에서 data.img_list의 이미지들을 동적으로 추가 -->
+          </div>
+          <!-- 우측 화살표 (기본 숨김 처리) -->
+          <button class="arrow right hidden" id="rightArrow">&gt;</button>
+        </div>
+        <!-- 다이얼로그 본문 내용 -->
+        <div id="dialogContent" class="dialog-body"></div>
+        <!-- PDF 표시 영역 (초기 숨김) -->
+        <div id="dialogPDF">
+          <iframe id="pdfFrame" src="" width="100%" height="600px" style="border: none;"></iframe>
+        </div>
       </div>
     </div>
   </div>

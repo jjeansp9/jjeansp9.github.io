@@ -27,17 +27,70 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* 닫기 버튼 스타일 */
-  .close {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+  /* 슬라이더 컨테이너 설정: 원하는 고정 높이(예: 300px)와 전체 너비로 설정 */
+#dialogImageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 500px;  /* 원하는 고정 높이 설정 */
+}
+
+/* 이미지 리스트 컨테이너: flex 레이아웃으로 수평 정렬 */
+#dialogImageList {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+/* 슬라이더 내 각 이미지가 컨테이너의 전체 크기를 차지하도록 설정 */
+#dialogImageList img {
+  flex: 0 0 100%;   /* 각 이미지가 컨테이너의 100% 너비를 차지 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* 이미지 비율 유지하면서 컨테이너를 채우도록 함 */
+  /* margin 제거 혹은 필요 시 조정 */
+  margin: 0;
+}
+
+/* 좌우 화살표 버튼 스타일 */
+.arrow {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 10;
+}
+.arrow.left {
+  left: 0;
+}
+.arrow.right {
+  right: 0;
+}
+
+/* 기본적으로 화살표는 숨김. JS에서 필요 시 클래스 제거하여 표시 */
+.hidden {
+  display: none;
+}
   
+/* 닫기 버튼 스타일 */
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
   .close:hover {
     color: #000;
   }
