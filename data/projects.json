@@ -1,24 +1,45 @@
 [
   {
     "title": "비트업",
-    "content": "앱 설명 내용 \n1",
+    "period": "2023.04 ~ 진행중",
+    "playstore_url": "https://play.google.com/store/apps/details?id=com.jspstudio.bitcoinproject&hl=ko",
+    "summary": "이 앱은 코인 거래에 입문한 사용자들이 부담 없이 실전과 같은 비트코인 매매 환경을 체험할 수 있도록 만든 모의투자앱입니다. 실제 시장과 동일하게 실시간 시세 데이터를 반영하여, 매수와 매도 기능을 통해 다양한 거래 전략을 시험해 볼 수 있어요. 업비트 UI가 사용자들에게 많이 친숙 할 것 같다고 생각되어, 업비트 UI를 벤치마킹 하였고, 초보 투자자들도 어렵지 않게 금융 시장의 흐름을 익히며 투자 감각을 키우기 위한 의도로 앱을 개발하게 되었습니다.",
+    "key_function": ["실시간으로 실제 코인 데이터를 활용하여 지급받은 가상원화로 매수, 매도 기능 제공", "투자성향별 맞춤 AI 전략 기능 제공", "매매 분석을 위한 차트 제공", "사용자들간의 매매전략 공유를 위한 커뮤니티 제공 (게시글, 댓글)", "사용자들의 매매 수익에 따른 순위 목록"],
+    "meaning": "업비트 api를 사용하여 실시간으로 코인가격이 변동하는 모습을 사용자들에게 보여주기 위한 과정에서 개발 초창기에는 성능이슈로 앱 버벅임이 굉장히 심해 사용이 불가능한 수준이였습니다. 이 문제를 해결하기 위해 다양한 방식의 코딩을 하게 되었고, 앱 버벅임을 급격하게 줄일 수 있었습니다.",
+    "tech_stack": "Kotlin, Retrofit, Room Database, Firebase, DataBinding",
+    "dev_part": "개인 프로젝트 (기획, 디자인, 기능 등 전체 담당)",
     "img": "images/app1.png",
-    "img_list": ["images/app1.png"]
+    "img_list": ["images/bitup/1.png", "images/bitup/2.png", "images/bitup/2-1.png", "images/bitup/3.png", "images/bitup/4.png", "images/bitup/5.png", "images/bitup/6.png", "images/bitup/7.png", "images/bitup/8.png", "images/bitup/9.png", "images/bitup/10.png", "images/bitup/11.png", "images/bitup/12.png", "images/bitup/13.png", "images/bitup/14.png"]
   },
   {
     "title": "Inclar",
-    "content": "앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2앱 설명 내용 2",
+    "period": "",
+    "playstore_url": "",
+    "summary": "",
+    "key_function": [""],
+    "meaning": "",
+    "tech_stack": "",
+    "dev_part": "",
     "img": "images/app2.png",
     "img_list": ["images/app2.png"]
   },
   {
     "title": "메이플 아이템 강화앱",
-    "content": "이 앱은 기존 메이플 게임의 아이템 강화 시스템이 복잡하고 직관성이 떨어지는 문제를 해결하기 위해 기획되었습니다. 플레이어들이 강화 과정에서 겪는 불편함과 시간 소모를 줄이고, 강화 성공률과 보상 체계 개선을 통해 게임의 전략성과 재미를 동시에 높이고자 하였습니다. 또한, 실시간 강화 결과 확인 및 시각적 피드백 제공으로 사용자 만족도를 극대화하는 것을 목표로 하였으며, 이를 위해 최신 안드로이드 기술과 아키텍처 패턴을 적극 활용하였습니다.",
+    "period": "",
+    "playstore_url": "",
+    "summary": "",
+    "key_function": [""],
+    "meaning": "",
+    "tech_stack": "",
+    "dev_part": "",
     "img": "images/app3.png",
     "img_list": ["images/app3.png", "images/app4.png", "images/app1.png"]
   },
   {
     "title": "Travin",
+    "period": "",
+    "playstore_url": "",
+    "tech_stack": "",
     "pdf": "files/travin.pdf",
     "img": "images/app4.png",
     "img_list": ["images/app4.png"]

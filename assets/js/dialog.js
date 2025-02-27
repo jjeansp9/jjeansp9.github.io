@@ -32,14 +32,17 @@ document.addEventListener("DOMContentLoaded", function () {
           `;
           element.appendChild(article);
         } else {
-          // 일반 항목: 클릭 시 다이얼로그를 띄움 (data-attributes로 데이터 저장)
           element = document.createElement('article');
           element.classList.add('item');
-          element.setAttribute('data-title', item.title);
-          element.setAttribute('data-content', item.content);
           element.setAttribute('data-img', item.img);
-          // data-img-list를 JSON 문자열 형태로 저장 (나중에 JSON.parse()로 배열로 변환)
           element.setAttribute('data-img-list', JSON.stringify(item.img_list));
+          element.setAttribute('data-title', item.title);
+          element.setAttribute('data-period', item.period);
+          element.setAttribute('data-summary', item.summary);
+          element.setAttribute('data-key-function', JSON.stringify(item.key_function));
+          element.setAttribute('data-meaning', item.meaning);
+          element.setAttribute('data-tech-stack', item.tech_stack);
+          element.setAttribute('data-dev-part', item.dev_part);
           element.innerHTML = `
             <div class="image fit">
               <img src="${item.img}" alt="${item.title}">
@@ -87,11 +90,15 @@ document.addEventListener("DOMContentLoaded", function () {
         triggers.forEach(trigger => {
           trigger.addEventListener("click", function () {
             const data = {
-              title: trigger.getAttribute("data-title"),
-              content: trigger.getAttribute("data-content"),
               img: trigger.getAttribute("data-img"),
-              // data-img-list를 JSON 문자열에서 배열로 변환합니다.
-              imgList: JSON.parse(trigger.getAttribute("data-img-list"))
+              imgList: JSON.parse(trigger.getAttribute("data-img-list")),
+              title: trigger.getAttribute("data-title"),
+              period: trigger.getAttribute("data-period"),
+              summary: trigger.getAttribute("data-summary"),
+              key_function: JSON.parse(trigger.getAttribute("data-key-function")),
+              meaning: trigger.getAttribute("data-meaning"),
+              tech_stack: trigger.getAttribute("data-tech-stack"),
+              dev_part: trigger.getAttribute("data-dev-part"),
             };
             updateDialogContent(data);
             dialog.classList.add("active");
@@ -161,12 +168,30 @@ document.addEventListener("DOMContentLoaded", function () {
   // 다이얼로그 내용 업데이트 함수
   function updateDialogContent(data) {
     // 다이얼로그 내의 제목, 내용, 그리고 이미지 슬라이더 컨테이너를 선택합니다.
-    const titleEl = document.querySelector("#customDialog #title");
-    const contentEl = document.querySelector("#customDialog #background");
     const imageListEl = document.querySelector("#customDialog #dialogImageList");
+    const titleEl = document.querySelector("#customDialog #title");
+    const periodEl = document.querySelector("#customDialog #period");
+    const summaryEl = document.querySelector("#customDialog #summary");
+    const ulEl = document.querySelector("#customDialog ul");
+    const meaningEl = document.querySelector("#customDialog #meaning");
+    const techEl = document.querySelector("#customDialog #tech_stack");
+    const devPartEl = document.querySelector("#customDialog #dev_part");
+    
 
     if (titleEl) titleEl.textContent = data.title;
-    if (contentEl) contentEl.textContent = data.content;
+    if (periodEl) periodEl.textContent = data.period;
+    if (summaryEl) summaryEl.textContent = data.summary;
+    if (meaningEl) meaningEl.textContent = data.meaning;
+    if (techEl) techEl.textContent = data.tech_stack;
+    if (devPartEl) devPartEl.textContent = data.dev_part;
+
+    ulEl.innerHTML = "";
+    data.key_function.forEach(text => {
+      const li = document.createElement("li");
+      li.classList.add("dialogContent");
+      li.textContent = text;
+      ulEl.appendChild(li);
+    });
 
     // 이미지 슬라이더 컨테이너를 초기화합니다.
     imageListEl.innerHTML = '';
