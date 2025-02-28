@@ -35,9 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
           element = document.createElement('article');
           element.classList.add('item');
           element.setAttribute('data-img', item.img);
+          element.setAttribute('data-img-logo', item.img_logo);
           element.setAttribute('data-img-list', JSON.stringify(item.img_list));
           element.setAttribute('data-title', item.title);
           element.setAttribute('data-period', item.period);
+          element.setAttribute('data-playstore-url', item.playstore_url);
           element.setAttribute('data-summary', item.summary);
           element.setAttribute('data-key-function', JSON.stringify(item.key_function));
           element.setAttribute('data-meaning', item.meaning);
@@ -91,9 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
           trigger.addEventListener("click", function () {
             const data = {
               img: trigger.getAttribute("data-img"),
-              imgList: JSON.parse(trigger.getAttribute("data-img-list")),
+              img_logo: trigger.getAttribute("data-img-logo"),
+              img_list: JSON.parse(trigger.getAttribute("data-img-list")),
               title: trigger.getAttribute("data-title"),
               period: trigger.getAttribute("data-period"),
+              playstore_url: trigger.getAttribute("data-playstore-url"),
               summary: trigger.getAttribute("data-summary"),
               key_function: JSON.parse(trigger.getAttribute("data-key-function")),
               meaning: trigger.getAttribute("data-meaning"),
@@ -169,17 +173,23 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateDialogContent(data) {
     // 다이얼로그 내의 제목, 내용, 그리고 이미지 슬라이더 컨테이너를 선택합니다.
     const imageListEl = document.querySelector("#customDialog #dialogImageList");
+    const imageLogoEl = document.querySelector("#customDialog #img-logo");
     const titleEl = document.querySelector("#customDialog #title");
     const periodEl = document.querySelector("#customDialog #period");
+    const playstoreUrlEl = document.querySelector("#customDialog #playstore_url");
     const summaryEl = document.querySelector("#customDialog #summary");
     const ulEl = document.querySelector("#customDialog ul");
     const meaningEl = document.querySelector("#customDialog #meaning");
     const techEl = document.querySelector("#customDialog #tech_stack");
     const devPartEl = document.querySelector("#customDialog #dev_part");
-    
 
+    if (imageLogoEl) imageLogoEl.src = data.img_logo;
     if (titleEl) titleEl.textContent = data.title;
     if (periodEl) periodEl.textContent = data.period;
+    if (playstoreUrlEl) {
+      playstoreUrlEl.textContent = data.playstore_url;
+      playstoreUrlEl.href = data.playstore_url;
+    }
     if (summaryEl) summaryEl.textContent = data.summary;
     if (meaningEl) meaningEl.textContent = data.meaning;
     if (techEl) techEl.textContent = data.tech_stack;
@@ -197,12 +207,12 @@ document.addEventListener("DOMContentLoaded", function () {
     imageListEl.innerHTML = '';
 
     // data.imgList가 배열이면, 슬라이더를 초기화합니다.
-    if (data.imgList && Array.isArray(data.imgList) && data.imgList.length > 0) {
+    if (data.img_list && Array.isArray(data.img_list) && data.img_list.length > 0) {
       currentSlideIndex = 0;         // 첫 번째 슬라이드부터 시작
-      totalSlides = data.imgList.length;  // 총 이미지 수 설정
+      totalSlides = data.img_list.length;  // 총 이미지 수 설정
 
       // 각 이미지 URL마다 <img> 태그를 생성하여 imageListEl에 추가합니다.
-      data.imgList.forEach(imgUrl => {
+      data.img_list.forEach(imgUrl => {
         const imgTag = document.createElement('img');
         imgTag.src = imgUrl;
         imgTag.alt = data.title;
