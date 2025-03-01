@@ -105,7 +105,6 @@
   margin: 0;
 }
 
-/* 좌우 화살표 버튼 스타일 */
 .arrow {
   background: rgba(0,0,0,0.5);
   color: #fff;
@@ -192,6 +191,7 @@
   text-decoration: underline;
   cursor: pointer;
   line-height: 1.3;
+  width: max-content;
   display: block;
 }
 
