@@ -13,8 +13,8 @@
   display: flex;
   flex-direction: column;
   grid-template-columns: 1fr 1fr;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 60px;
   gap: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
@@ -45,32 +45,44 @@
 }
 
 .buttons button {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
   border: none;
   color: #fff;
   padding: 8px 12px;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: default;
   font-size: 0.9rem;
-  transition: transform 0.2s, box-shadow 0.2s;
   position: relative;
-  overflow: hidden;
+  transition: none;
 }
 
-.buttons button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Ripple Effect for button clicks */
-.ripple {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  transform: scale(0);
-  animation: ripple-effect 0.6s linear;
-  pointer-events: none;
-}
+.btn-kotlin, .btn-kotlin:hover { 
+  background-color: #F0A202; 
+  transition: none;
+}      
+.btn-java, .btn-java:hover { 
+  background-color: #6A4C93; 
+  transition: none;
+}         
+.btn-android, .btn-android:hover { 
+  background-color: #3DDC84;
+  transition: none;
+ }      
+.btn-vscode, .btn-vscode:hover { 
+  background-color: #007ACC;
+  transition: none;
+ }       
+.btn-firebase, .btn-firebase:hover {
+   background-color: #FFA000; 
+   transition: none;
+}     
+.btn-git, .btn-git:hover {
+   background-color: #F34F29; 
+   transition: none;
+}          
+.btn-github, .btn-github:hover { 
+  background-color: #24292E; 
+  transition: none;
+}       
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
