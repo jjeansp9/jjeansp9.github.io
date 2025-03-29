@@ -30,7 +30,7 @@
     border-radius: 0 0 10px 10px;
   }
 
-  .dialog-content::-webkit-scrollbar {
+  /* .dialog-content::-webkit-scrollbar {
     width: 14px;
   }
 
@@ -51,7 +51,7 @@
     background: #555;
     border: 2px solid transparent;
     background-clip: padding-box;
-  }
+  } */
 
   .dialog-header {
     display: flex;
