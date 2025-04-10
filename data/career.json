@@ -1,0 +1,34 @@
+{
+    "career": [
+      {
+        "id": "avad",
+        "position": "개발팀 - 안드로이드 네이티브앱 개발 담당",
+        "company": "아바드(주)",
+        "logo": {
+          "src": "images/avad_logo.png",
+          "alt": ""
+        },
+        "duration": "2023.02 - 2024.08",
+        "skills": [
+          "Android Studio",
+          "Java",
+          "Kotlin"
+        ],
+        "projects": [
+          {
+            "name": "에듀패밀리(자사 서비스앱)",
+            "description": "버그 수정, 기능 추가, 성능 개선",
+            "link": "https://play.google.com/store/apps/details?id=kr.co.avad.hsolution.edu&hl=ko&pli=1"
+          },
+          {
+            "name": "지트에듀케이션",
+            "description": "외부 클라이언트 요구사항에 맞게 맞춤형 앱 제작",
+            "link": "https://play.google.com/store/apps/details?id=kr.jeet.edu.student&hl=ko"
+          },
+          {
+            "description": "그 외 자회사 안드로이드 앱 UI/UX 및 기능 개발"
+          }
+        ]
+      }
+    ]
+}
