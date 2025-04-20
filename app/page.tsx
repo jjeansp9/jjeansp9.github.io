@@ -311,8 +311,8 @@ export default function HomePage() {
             </div>
             <div className="grid gap-8 md:grid-cols-2">
               <AnimatedCard className="rounded-lg border bg-card p-6 shadow-sm">
-                <div className="flex flex-col items-center space-y-4 text-center">
-                  <div className="relative h-48 w-48 overflow-hidden rounded-full border-[1.5px] border-gray-200 bg-white">
+                <div className="flex flex-col items-center space-y-12 text-center">
+                  <div className="relative h-56 w-56 overflow-hidden rounded-full border-[1.5px] border-gray-200 bg-white">
                     <Image
                       src={`/images/${aboutMeData.profile.image.src.replace('./images/', '')}`}
                       alt={aboutMeData.profile.image.alt}
@@ -321,14 +321,19 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold sm:text-xl">{aboutMeData.profile.title}</h3>
-                    <p className="text-sm text-muted-foreground sm:text-base">{aboutMeData.profile.content}</p>
+                  <div className="space-y-4 w-full">
+                    <h3 className="text-lg font-semibold sm:text-xl text-center">{aboutMeData.profile.title}</h3>
+                    <p 
+                      className="text-sm text-muted-foreground sm:text-base whitespace-pre-line text-left"
+                      dangerouslySetInnerHTML={{ 
+                        __html: aboutMeData.profile.content.replace(/\n/g, '<br />')
+                      }}
+                    />
                   </div>
                 </div>
               </AnimatedCard>
-              <div className="space-y-8">
-                <AnimatedCard className="rounded-lg border bg-card p-6 shadow-sm">
+              <div className="grid grid-rows-2 gap-8 h-full">
+                <AnimatedCard className="rounded-lg border bg-card p-6 shadow-sm h-full">
                   <h3 className="mb-6 text-lg font-bold text-center sm:text-xl">Profile</h3>
                   <div className="grid gap-3">
                     {Object.entries(aboutMeData.profile_info).map(([key, value]) => (
@@ -339,7 +344,7 @@ export default function HomePage() {
                     ))}
                   </div>
                 </AnimatedCard>
-                <AnimatedCard className="rounded-lg border bg-card p-6 shadow-sm">
+                <AnimatedCard className="rounded-lg border bg-card p-6 shadow-sm h-full">
                   <h3 className="mb-6 text-lg font-bold text-center sm:text-xl">Experience</h3>
                   <div className="grid gap-3">
                     {aboutMeData.experience.map((exp, index) => (
