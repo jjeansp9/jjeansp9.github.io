@@ -460,7 +460,7 @@ export default function HomePage() {
                 <AnimatedCard key={career.id} className="rounded-lg border bg-card p-6 shadow-sm">
                   <div className="flex flex-col space-y-4 md:flex-row md:items-start md:space-x-6 md:space-y-0">
                     <div className="flex-shrink-0">
-                      <div className="relative h-32 w-32 overflow-hidden rounded-full border-[1.5px] border-gray-200 bg-white">
+                      <div className="relative h-48 w-48 overflow-hidden rounded-full border-[1.5px] border-gray-200 bg-white">
                         <Image
                           src={`/images/${career.logo.src.replace('images/', '')}`}
                           alt={career.logo.alt}
@@ -486,37 +486,40 @@ export default function HomePage() {
                           </span>
                         ))}
                       </div>
-                      <div className="space-y-4">
+                      <div className="h-1"></div>
+                      <div className="space-y-6">
                         {career.projects.map((project, projectIndex) => (
-                          <div key={projectIndex} className="space-y-3 rounded-lg border bg-muted/50 p-4">
+                          <div key={projectIndex} className="space-y-3">
                             <div className="flex items-center justify-between">
-                              <h4 className="text-sm font-medium sm:text-base">{project.name}</h4>
-                              {project.link && (
-                                <a
-                                  href={project.link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-xs text-primary hover:underline sm:text-sm"
-                                >
-                                  앱 보기
-                                </a>
-                              )}
+                              <div className="flex items-center gap-2">
+                                <h4 className="text-base font-medium">{project.name}</h4>
+                                {project.link && (
+                                  <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm text-primary hover:underline"
+                                  >
+                                    앱 보기
+                                  </a>
+                                )}
+                              </div>
                             </div>
-                            <p className="text-xs text-muted-foreground sm:text-sm">
+                            <p className="text-sm text-muted-foreground">
                               {project.description}
                             </p>
                             {project.role && (
                               <div className="space-y-1">
-                                <p className="text-xs font-medium text-primary sm:text-sm">담당 역할</p>
-                                <p className="text-xs text-muted-foreground sm:text-sm">{project.role}</p>
+                                <p className="text-sm font-medium text-primary">담당 역할</p>
+                                <p className="text-sm text-muted-foreground">{project.role}</p>
                               </div>
                             )}
                             {project.contributions && project.contributions.length > 0 && (
                               <div className="space-y-1">
-                                <p className="text-xs font-medium text-primary sm:text-sm">주요 기여</p>
+                                <p className="text-sm font-medium text-primary">주요 기여</p>
                                 <ul className="list-disc pl-4 space-y-1">
                                   {project.contributions.map((contribution, idx) => (
-                                    <li key={idx} className="text-xs text-muted-foreground sm:text-sm">
+                                    <li key={idx} className="text-sm text-muted-foreground">
                                       {contribution}
                                     </li>
                                   ))}

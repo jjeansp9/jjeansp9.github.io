@@ -43,6 +43,7 @@
     "title": "Travin",
     "period": "2022.10 ~ 2022.11",
     "playstore_url": "",
+    "summary": "여행을 하고있거나 계획이 있는 사용자들끼리 정보 교류를 위한 커뮤니케이션 SNS 입니다.",
     "tech_stack": ["Kotlin", "Firebase"],
     "pdf": "files/travin.pdf",
     "img": "images/app4.png",
