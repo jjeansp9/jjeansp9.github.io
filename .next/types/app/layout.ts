@@ -1,4 +1,4 @@
-// File: C:\workspace\web\cusor-test-2\app\layout.tsx
+// File: C:\workspace\web\jjeansp9.github.io\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

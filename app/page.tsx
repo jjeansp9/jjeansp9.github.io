@@ -20,6 +20,8 @@ interface Project {
   key_function: string[];
   meaning: string;
   pdf?: string;
+  role?: string;
+  contributions?: string[];
 }
 
 interface Career {
@@ -486,7 +488,7 @@ export default function HomePage() {
                       </div>
                       <div className="space-y-4">
                         {career.projects.map((project, projectIndex) => (
-                          <div key={projectIndex} className="space-y-2">
+                          <div key={projectIndex} className="space-y-3 rounded-lg border bg-muted/50 p-4">
                             <div className="flex items-center justify-between">
                               <h4 className="text-sm font-medium sm:text-base">{project.name}</h4>
                               {project.link && (
@@ -503,6 +505,24 @@ export default function HomePage() {
                             <p className="text-xs text-muted-foreground sm:text-sm">
                               {project.description}
                             </p>
+                            {project.role && (
+                              <div className="space-y-1">
+                                <p className="text-xs font-medium text-primary sm:text-sm">담당 역할</p>
+                                <p className="text-xs text-muted-foreground sm:text-sm">{project.role}</p>
+                              </div>
+                            )}
+                            {project.contributions && project.contributions.length > 0 && (
+                              <div className="space-y-1">
+                                <p className="text-xs font-medium text-primary sm:text-sm">주요 기여</p>
+                                <ul className="list-disc pl-4 space-y-1">
+                                  {project.contributions.map((contribution, idx) => (
+                                    <li key={idx} className="text-xs text-muted-foreground sm:text-sm">
+                                      {contribution}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
                           </div>
                         ))}
                       </div>
