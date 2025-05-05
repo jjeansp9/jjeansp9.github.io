@@ -413,7 +413,7 @@ export default function HomePage() {
               </AnimatedText>
               <AnimatedText>
                 <p className="text-base text-muted-foreground sm:text-lg">
-                  제가 개발한 안드로이드 앱 프로젝트들을 소개합니다.
+                  제가 개발한 프로젝트들입니다.
                 </p>
               </AnimatedText>
             </div>
@@ -433,6 +433,7 @@ export default function HomePage() {
                     keyFunction={project.key_function}
                     meaning={project.meaning}
                     pdf={project.pdf}
+                    isWebProject={!project.playstore_url}
                   />
                 </AnimatedCard>
               ))}
@@ -451,7 +452,7 @@ export default function HomePage() {
               </AnimatedText>
               <AnimatedText>
                 <p className="text-base text-muted-foreground sm:text-lg">
-                  제가 경험한 직무와 프로젝트를 소개합니다.
+                  제가 경험한 직무에 대해 소개합니다.
                 </p>
               </AnimatedText>
             </div>

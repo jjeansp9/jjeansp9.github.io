@@ -19,6 +19,7 @@ interface ProjectCardProps {
   keyFunction?: string[];
   meaning?: string;
   pdf?: string;
+  isWebProject?: boolean;
 }
 
 export function ProjectCard({
@@ -34,6 +35,7 @@ export function ProjectCard({
   keyFunction,
   meaning,
   pdf,
+  isWebProject = false,
 }: ProjectCardProps) {
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
   const [imageError, setImageError] = React.useState(false);
@@ -60,7 +62,7 @@ export function ProjectCard({
                     alt={title}
                     fill
                     unoptimized
-                    className="object-cover transition-transform"
+                    className={`object-cover transition-transform ${isWebProject ? 'object-contain' : ''}`}
                     onError={() => setImageError(true)}
                   />
                 ) : (
@@ -89,7 +91,7 @@ export function ProjectCard({
                   </div>
                 </div>
                 <div className="flex items-center justify-end gap-1 text-sm font-medium text-primary transition-colors duration-300 group-hover:text-primary/80">
-                  <span>PDF 문서 보기</span>
+                  <span>프로젝트 보기</span>
                   <ArrowRight className="h-4 w-4" />
                 </div>
               </div>
@@ -105,7 +107,7 @@ export function ProjectCard({
                     alt={title}
                     fill
                     unoptimized
-                    className="object-cover transition-transform"
+                    className={`object-cover transition-transform ${isWebProject ? 'object-contain' : ''}`}
                     onError={() => setImageError(true)}
                   />
                 ) : (
@@ -186,7 +188,7 @@ export function ProjectCard({
           <div className="space-y-8 p-12">
             <div className="relative aspect-[12/9] w-full mx-auto overflow-hidden rounded-xl shadow-inner flex items-center justify-center">
               {!imageError && images.length > 0 ? (
-                <div className="relative h-full w-full max-w-[300px] mx-auto">
+                <div className="relative h-full w-full max-w-[900px] mx-auto">
                   <Image
                     src={images[currentImageIndex].startsWith('/') ? images[currentImageIndex] : `/${images[currentImageIndex]}`}
                     alt={`${title} screenshot ${currentImageIndex + 1}`}
@@ -230,7 +232,7 @@ export function ProjectCard({
               </div>
             )}
             <div className="flex items-start space-x-4">
-              {imgLogo && !logoError ? (
+              {imgLogo && !logoError && !isWebProject ? (
                 <div className="relative h-16 w-16 overflow-hidden rounded-2xl border-2 border-primary/20 bg-white shadow-sm">
                   <Image
                     src={imgLogo.startsWith('/') ? imgLogo : `/${imgLogo}`}
@@ -241,11 +243,11 @@ export function ProjectCard({
                     onError={() => setLogoError(true)}
                   />
                 </div>
-              ) : (
+              ) : !isWebProject ? (
                 <div className="flex h-16 w-16 items-center justify-center rounded-md bg-primary/10 shadow-sm">
                   <ImageIcon className="h-8 w-8 text-muted-foreground" />
                 </div>
-              )}
+              ) : null}
               <div className="flex-1 space-y-2">
                 <div className="flex items-center justify-between">
                   <h2 className="text-3xl font-bold">{title}</h2>
@@ -288,7 +290,7 @@ export function ProjectCard({
               {summary && (
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold">Summary</h3>
-                  <p className="text-base text-muted-foreground">{summary}</p>
+                  <p className="text-base text-muted-foreground whitespace-pre-line">{summary}</p>
                 </div>
               )}
               {meaning && (
