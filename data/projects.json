@@ -6,7 +6,7 @@
     "summary": "저만의 웹사이트를 만들어서 포트폴리오를 보여주고 싶었습니다. 그러나 웹사이트 개발하는 방법에 대한 지식이 많지는 않기 때문에 포트폴리오 웹사이트를 개발하는데 많은 어려움이 있었습니다. \n\n그런 과정 속에서 AI를 활용하는 방법으로 웹사이트를 개발하자는 방향으로 정하게 되었고, 여러 정보들을 알아보던 중에 Cursor AI라는 개발 툴을 발견하게 되었습니다. \n\nAI가 단순히 코드만 작성해주는 것이 아닌 직접 파일들을 생성하여 각각의 파일에 코드를 알아서 작성해주고 Terminal에 스스로 명령어를 입력하여 직접 run을 하거나, 프로젝트 내에 있는 파일들의 소스코드를 참고하여 작성해주는 것에 흥미를 느껴 Cursor AI 개발 툴을 사용하여 새로운 코딩방식인 바이브코딩으로 포트폴리오 웹사이트를 개발해보기로 하였습니다.",
     "key_function": ["나만의 포트폴리오를 위한 웹사이트", "자기소개, 인적사항, 기술스택, 프로젝트, 경력사항을 시각화"],
     "meaning": "아이러니 하게도 AI가 알아서 코딩함에도 불구하고 생각보다 많은 개발지식이 필요하다는 것을 느꼈습니다. AI에게 원하고자 하는 것을 요청할 때에는 알고있는 개발지식을 기반으로 생각보다 더 구체적으로 요청해야 원하는 결과를 얻을 수 있음을 알게되는 나름 중요한 경험을 하게되었습니다. 이 경험을 통해 개발 과정에서 필요한 지식을 찾아 학습하는 것이 매우 중요하다는 것을 배우는 계기가 되었습니다.",
-    "tech_stack": ["Next.js", "TypeScript", "Github Pages", "Cursor AI"],
+    "tech_stack": ["Next.js", "TypeScript", "Tailwind CSS", "Github Pages", "Cursor AI"],
     "dev_part": "개인 프로젝트",
     "img": "images/portfolio/jjeansp9.github.io-1.png",
     "img_list": ["images/portfolio/jjeansp9.github.io-1.png", "images/portfolio/jjeansp9.github.io-2.png", "images/portfolio/jjeansp9.github.io-3.png", "images/portfolio/jjeansp9.github.io-4.png", "images/portfolio/jjeansp9.github.io-5.png"]
