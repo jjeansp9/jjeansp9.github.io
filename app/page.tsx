@@ -15,7 +15,7 @@ import Image from "next/image";
 interface Project {
   name: string;
   description: string;
-  link?: string;
+  link?: string[];
   dev_part: string;
   key_function: string[];
   meaning: string;
@@ -61,7 +61,7 @@ const aboutMeData = aboutMe as AboutMe;
 const skillCategories = [
   {
     name: "Programming Languages",
-    skills: ["Kotlin", "Java"],
+    skills: ["Kotlin", "Java", "Javascript"],
   },
   {
     name: "Android Development",
@@ -87,7 +87,7 @@ const skillCategories = [
   },
   {
     name: "Others",
-    skills: ["Git", "GitHub", "Android Studio", "Visual Studio Code", "Cursor AI"],
+    skills: ["Git", "GitHub", "Android Studio", "Visual Studio Code", "Xcode", "Cursor AI"],
   },
 ];
 
@@ -492,18 +492,29 @@ export default function HomePage() {
                         {career.projects.map((project, projectIndex) => (
                           <div key={projectIndex} className="space-y-3">
                             <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2">
+                              <div className="flex items-center gap-2 flex-wrap">
                                 <h4 className="text-base font-medium">{project.name}</h4>
-                                {project.link && (
-                                  <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-sm text-primary hover:underline"
-                                  >
-                                    앱 보기
-                                  </a>
-                                )}
+                                {project.link && project.link.length > 0 && project.link.map((url, idx) => {
+                                  const isPlayStore = url.includes('play.google.com');
+                                  const isAppStore = url.includes('apps.apple.com');
+                                  const linkText = isPlayStore 
+                                    ? '플레이스토어' 
+                                    : isAppStore 
+                                    ? '앱스토어' 
+                                    : '';
+                                  
+                                  return (
+                                    <a
+                                      key={idx}
+                                      href={url}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-sm text-primary hover:underline whitespace-nowrap"
+                                    >
+                                      {linkText}
+                                    </a>
+                                  );
+                                })}
                               </div>
                             </div>
                             <p className="text-sm text-muted-foreground">

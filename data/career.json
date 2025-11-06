@@ -17,7 +17,7 @@
         "projects": [
           {
             "name": "에듀패밀리",
-            "link": "https://play.google.com/store/apps/details?id=kr.co.avad.hsolution.edu&hl=ko&pli=1",
+            "link": ["https://play.google.com/store/apps/details?id=kr.co.avad.hsolution.edu&hl=ko&pli=1"],
             "description": "학원솔루션 서비스의 출결 및 학원과 부모님, 원생의 소통 앱",
             "role": "유지보수, 기능 수정 및 신규기능 추가, 앱 배포 관리",
             "contributions": [
@@ -28,7 +28,7 @@
           },
           {
             "name": "지트에듀케이션",
-            "link": "https://play.google.com/store/apps/details?id=kr.jeet.edu.student&hl=ko",
+            "link": ["https://play.google.com/store/apps/details?id=kr.jeet.edu.student&hl=ko"],
             "description": "학원 문의, 테스트, 각종 학원 설명회 등 다양한 기능을 제공하는 출결 관리 앱",
             "role": "앱 개발 및 배포 이후 유지관리",
             "contributions": [
@@ -38,6 +38,45 @@
               "QR 코드 스캔 기능 개발",
               "앱 출시 후 피드백 반영하여 개선작업 진행",
               "메뉴 항목별 기능 개발"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "avad",
+        "position": "Android & iOS 유지보수 담당",
+        "company": "(주)베가웍스",
+        "logo": {
+          "src": "images/vegaworks_logo.png",
+          "alt": ""
+        },
+        "duration": "2025.05 ~ 현재",
+        "skills": [
+          "Android Studio",
+          "Xcode",
+          "Java",
+          "Javascript"
+        ],
+        "projects": [
+          {
+            "name": "119신고",
+            "link": [
+              "https://play.google.com/store/search?q=119%EC%8B%A0%EA%B3%A0&c=apps&hl=ko",
+              "https://apps.apple.com/kr/app/119%EC%8B%A0%EA%B3%A0/id790045907"
+            ],
+            "description": "신고자의 위치정보를 MMS/SMS를 통해 해당 지역 소방 상황실로 전송할 수 있게 도와주는 앱",
+            "role": "앱 개발, 배포 관리, 유지보수",
+            "contributions": [
+              "화면 UI 개선"
+            ]
+          },
+          {
+            "name": "M119현장지원시스템",
+            "link": [""],
+            "description": "소방대원 및 구급대원들이 현장출동 시 필요한 정보를 제공하고, 현장 상황을 실시간으로 공유 및 신고자의 위치정보를 실시간으로 확인할 수 있게 도와주는 앱",
+            "role": "앱 배포 관리, 유지보수",
+            "contributions": [
+              "오류 발생 시 빠른 대응 및 오류 수정"
             ]
           }
         ]
